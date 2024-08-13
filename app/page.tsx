@@ -1,113 +1,113 @@
 import Image from "next/image";
+import KeyboardArrowDown from '@mui/icons-material/KeyboardArrowDown';
 
 export default function Home() {
   return (
-    <main className="flex min-h-screen flex-col items-center justify-between p-24">
-      <div className="z-10 w-full max-w-5xl items-center justify-between font-mono text-sm lg:flex">
-        <p className="fixed left-0 top-0 flex w-full justify-center border-b border-gray-300 bg-gradient-to-b from-zinc-200 pb-6 pt-8 backdrop-blur-2xl dark:border-neutral-800 dark:bg-zinc-800/30 dark:from-inherit lg:static lg:w-auto  lg:rounded-xl lg:border lg:bg-gray-200 lg:p-4 lg:dark:bg-zinc-800/30">
-          Get started by editing&nbsp;
-          <code className="font-mono font-bold">app/page.tsx</code>
-        </p>
-        <div className="fixed bottom-0 left-0 flex h-48 w-full items-end justify-center bg-gradient-to-t from-white via-white dark:from-black dark:via-black lg:static lg:size-auto lg:bg-none">
-          <a
-            className="pointer-events-none flex place-items-center gap-2 p-8 lg:pointer-events-auto lg:p-0"
-            href="https://vercel.com?utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            By{" "}
+    <main className="flex min-h-screen flex-col items-center justify-between p-0 m-0">
+      <div className="relative w-full min-h-screen flex flex-col items-center justify-center">
+        <Image
+          src="/31064791076_c5b93da098_o.jpg"
+          alt="Descripción de la imagen"
+          fill
+          className="object-cover"
+          priority
+          quality={100}
+        />
+        <div className="uppercase absolute inset-0 flex flex-col items-center justify-center">
+          <h1 className="md:px-5 text-white text-center text-3xl md:text-4xl lg:text-5xl font-bold drop-shadow-[0_0_0.4rem_#ffffff70] text-shadow-custom shadow-black">Bali y Crossfit en un sólo viaje</h1>
+          <br></br>
+          <br></br>
+          <h1 className="md:px-5 text-white text-center text-3xl md:text-4xl lg:text-5xl font-bold drop-shadow-[0_0_0.4rem_#ffffff70] text-shadow-custom shadow-black">Un viaje en grupos reducidos y filtrados para vivir aventuras y experiencias con personas afines a ti</h1>
+        </div>
+        <a href="#second-section" className="animate-bounce absolute bottom-10 text-white text-7xl drop-shadow-[0_0_0.4rem_#ffffff70]">
+          <KeyboardArrowDown fontSize="inherit" />
+        </a>
+      </div>
+
+      <div id="second-section" className="w-full min-h-screen flex flex-col lg:flex-row items-center justify-center mt-12">
+        <div className="w-full text-center uppercase lg:w-1/2 p-8">
+          <div className="w-64 h-64 mx-auto relative">
             <Image
-              src="/vercel.svg"
-              alt="Vercel Logo"
-              className="dark:invert"
-              width={100}
-              height={24}
-              priority
-            />
-          </a>
+                src="/IMG-20240805-WA0013.jpg"
+                alt="Descripcion"
+                fill
+                className="object-contain"
+              />
+          </div>
+
+          <h2 className="text-3xl text-t2fPrimary font-extrabold">¿Por qué Travel To Feel?</h2>
+        </div>
+        <div className="w-full lg:w-1/2 h-[600px] relative">
+          <Image
+            src="/IMG-20240805-WA0015.jpg"
+            alt="Descripcion"
+            fill
+            className="object-cover"
+          />
         </div>
       </div>
 
-      <div className="relative z-[-1] flex place-items-center before:absolute before:h-[300px] before:w-full before:-translate-x-1/2 before:rounded-full before:bg-gradient-radial before:from-white before:to-transparent before:blur-2xl before:content-[''] after:absolute after:-z-20 after:h-[180px] after:w-full after:translate-x-1/3 after:bg-gradient-conic after:from-sky-200 after:via-blue-200 after:blur-2xl after:content-[''] before:dark:bg-gradient-to-br before:dark:from-transparent before:dark:to-blue-700 before:dark:opacity-10 after:dark:from-sky-900 after:dark:via-[#0141ff] after:dark:opacity-40 sm:before:w-[480px] sm:after:w-[240px] before:lg:h-[360px]">
-        <Image
-          className="relative dark:drop-shadow-[0_0_0.3rem_#ffffff70] dark:invert"
-          src="/next.svg"
-          alt="Next.js Logo"
-          width={180}
-          height={37}
-          priority
-        />
+      <div className="flex flex-col w-1/2 h-1/2 text-center">
+        <p>
+          Travel to Feel nace de dos caminos que se unen. Por un lado, del mayor regalo que te puede dar el Crossfit, su comunidad.
+          Todos esos momentos al acabar el WOD y darle la mano a tu compañero al borde del infarto, o esos gritos de ánimo cuando haces RM o te sale tu primer gimnástico.
+          Esas charlas que pueden alargarse horas compartiendo con tus compañeros del box, por no hablar ya de los días de partner wod que acaban en cervecita o picoteo.
+          Por otro lado, nace de la sensación inexplicable pero increíble que surge al comprar los billetes de avión para irte de viaje. 
+          Para conocer un país nuevo, su cultura y costumbres. Para enamorarte una y otra vez de los paisajes y sobre todo, para llevarte el souvenir más preciado que puedas conseguir, todos esos momentos vividos y que recordarás para siempre.
+        </p>
       </div>
 
-      <div className="mb-32 grid text-center lg:mb-0 lg:w-full lg:max-w-5xl lg:grid-cols-4 lg:text-left">
-        <a
-          href="https://nextjs.org/docs?utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-          className="group rounded-lg border border-transparent px-5 py-4 transition-colors hover:border-gray-300 hover:bg-gray-100 hover:dark:border-neutral-700 hover:dark:bg-neutral-800/30"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <h2 className="mb-3 text-2xl font-semibold">
-            Docs{" "}
-            <span className="inline-block transition-transform group-hover:translate-x-1 motion-reduce:transform-none">
-              -&gt;
-            </span>
-          </h2>
-          <p className="m-0 max-w-[30ch] text-sm opacity-50">
-            Find in-depth information about Next.js features and API.
-          </p>
-        </a>
-
-        <a
-          href="https://nextjs.org/learn?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-          className="group rounded-lg border border-transparent px-5 py-4 transition-colors hover:border-gray-300 hover:bg-gray-100 hover:dark:border-neutral-700 hover:dark:bg-neutral-800/30"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <h2 className="mb-3 text-2xl font-semibold">
-            Learn{" "}
-            <span className="inline-block transition-transform group-hover:translate-x-1 motion-reduce:transform-none">
-              -&gt;
-            </span>
-          </h2>
-          <p className="m-0 max-w-[30ch] text-sm opacity-50">
-            Learn about Next.js in an interactive course with&nbsp;quizzes!
-          </p>
-        </a>
-
-        <a
-          href="https://vercel.com/templates?framework=next.js&utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-          className="group rounded-lg border border-transparent px-5 py-4 transition-colors hover:border-gray-300 hover:bg-gray-100 hover:dark:border-neutral-700 hover:dark:bg-neutral-800/30"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <h2 className="mb-3 text-2xl font-semibold">
-            Templates{" "}
-            <span className="inline-block transition-transform group-hover:translate-x-1 motion-reduce:transform-none">
-              -&gt;
-            </span>
-          </h2>
-          <p className="m-0 max-w-[30ch] text-sm opacity-50">
-            Explore starter templates for Next.js.
-          </p>
-        </a>
-
-        <a
-          href="https://vercel.com/new?utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-          className="group rounded-lg border border-transparent px-5 py-4 transition-colors hover:border-gray-300 hover:bg-gray-100 hover:dark:border-neutral-700 hover:dark:bg-neutral-800/30"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <h2 className="mb-3 text-2xl font-semibold">
-            Deploy{" "}
-            <span className="inline-block transition-transform group-hover:translate-x-1 motion-reduce:transform-none">
-              -&gt;
-            </span>
-          </h2>
-          <p className="m-0 max-w-[30ch] text-balance text-sm opacity-50">
-            Instantly deploy your Next.js site to a shareable URL with Vercel.
-          </p>
-        </a>
+      <div className="relative w-full min-h-screen flex flex-col lg:flex-row items-center justify-center mt-12">
+        <div className="w-full text-center uppercase lg:w-1/2 p-8">
+          <div className="w-full lg:w-3/4 h-[300px] mx-auto relative mb-4">
+            <Image
+                src="/IMG-20240805-WA0017.jpg"
+                alt="Descripcion"
+                fill
+                className="object-cover"
+              />
+          </div>
+          <div className="w-full lg:w-3/4 h-[300px] mx-auto relative">
+            <Image
+                src="/IMG-20240805-WA0018.jpg"
+                alt="Descripcion"
+                fill
+                className="object-cover"
+              />
+          </div>
+        </div>
+        <div className="w-full text-center uppercase lg:w-1/2 p-8">
+          <h2 className="text-3xl text-t2fPrimary text-shadow-custom shadow-black font-bold">¿Por qué en grupos <br></br> reducidos y filtrados?</h2>
+        </div>
       </div>
+
+      <div className="w-full min-h-screen flex flex-col justify-center items-center">
+        <div className="w-1/2 h-auto flex flex-col text-center p-4 mt-16 mb-8">
+          <p className="text-t2fGrey">
+            Sabemos que la conexión y la afinidad son dos aspectos imprescindibles para que la experiencia sea perfecta, y por ello, escogemos             
+            minuciosamente a personas compatibles que busquen vivir lo mismo.
+            <br></br> 
+            <br></br>
+            Crossfiteros que crean vínculos más allá de la amistad, convirtiéndose en <strong>familia</strong>.
+          </p>
+        </div>
+
+        <div className="w-1/2 min-h-screen flex flex-col items-center justify-center text-center mt-8">
+          <p className="">
+            ¿Eres esa persona que tiene guardado en favoritos boxes de otras partes del mundo con paisajes increíbles a su alrededor?
+            ¿Te gustaría tener un viaje sin huir de la rutina, sino volviendo a ella habiendo vivido y valorado cada momento? 
+            ¿Estás en un proceso de cambio y necesitas ese viaje para dedicártelo a ti mismo y salir de la zona de confort?
+            ¿O tal vez has intentado planificar ese viaje de ensueño y que todavía está únicamente en tu mente?
+            ¿Y si te dijera que hay muchas personas que tienen los mismos gustos y aficiones que tú y están deseando compartir las mismas experiencias?
+          </p>
+
+          <br />
+          <br />
+          
+          <h3 className="text-2xl font-black text-t2fSecondary uppercase text-shadow-custom shadow-black">Si te sientes identificado con alguna de estas preguntas, no eres raro, solo tienes que viajar con la familia t2f</h3>
+        </div>
+      </div>
+
     </main>
   );
 }
