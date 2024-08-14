@@ -16,7 +16,7 @@ const config: Config = {
       },
       colors: {
         t2fPrimary: '#545454',
-        t2fSecondary: '#8dc5d2',
+        t2fSecondary: '#38b6ff',
         t2fComplementary: '#b89289',
         t2fGrey: '#525156'
       },

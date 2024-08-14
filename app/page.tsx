@@ -6,20 +6,32 @@ export default function Home() {
     <main className="flex min-h-screen flex-col items-center justify-between p-0 m-0">
       <div className="relative w-full min-h-screen flex flex-col items-center justify-center">
         <Image
-          src="/31064791076_c5b93da098_o.jpg"
+          src="/sunlight-sea-bay-water-shore-sand-165774-wallhere.com.jpg"
           alt="Descripción de la imagen"
           fill
           className="object-cover"
           priority
           quality={100}
         />
-        <div className="uppercase absolute inset-0 flex flex-col items-center justify-center">
-          <h1 className="md:px-5 text-white text-center text-3xl md:text-4xl lg:text-5xl font-bold drop-shadow-[0_0_0.4rem_#ffffff70] text-shadow-custom shadow-black">Bali y Crossfit en un sólo viaje</h1>
-          <br></br>
-          <br></br>
-          <h1 className="md:px-5 text-white text-center text-3xl md:text-4xl lg:text-5xl font-bold drop-shadow-[0_0_0.4rem_#ffffff70] text-shadow-custom shadow-black">Un viaje en grupos reducidos y filtrados para vivir aventuras y experiencias con personas afines a ti</h1>
+        <div className="w-80 h-80 md:w-96 md:h-96 mx-auto absolute top-0 drop-shadow-[0_0_0.6rem_#000000ff]">
+            <Image
+                src="/IMG_0148.PNG"
+                alt="Descripcion"
+                fill
+                className="object-contain"
+              />
         </div>
-        <a href="#second-section" className="animate-bounce absolute bottom-10 text-white text-7xl drop-shadow-[0_0_0.4rem_#ffffff70]">
+        <div className="uppercase absolute inset-0 flex flex-col items-center justify-center mt-10">
+          <br></br>
+          <h1 className="md:px-5 text-t2fPrimary text-center text-3xl md:text-4xl lg:text-5xl font-bold drop-shadow-[0_0_0.6rem_#000000ff] ">
+            Bali y Crossfit en un sólo viaje.</h1>
+          <br></br>
+          <br></br>
+          <br></br>
+          <h1 className="md:px-5 text-t2fPrimary text-center text-2xl md:text-3xl lg:text-4xl font-bold drop-shadow-[0_0_0.6rem_#000000cc]">
+            Creada para personas que comparten la pasión de viajar y entrenar crosstraining en comunidad</h1>
+        </div>
+        <a href="#second-section" className="animate-bounce absolute bottom-10 text-t2fPrimary text-7xl drop-shadow-[0_0_0.6rem_#ffffffff]">
           <KeyboardArrowDown fontSize="inherit" />
         </a>
       </div>
@@ -28,33 +40,33 @@ export default function Home() {
         <div className="w-full text-center uppercase lg:w-1/2 p-8">
           <div className="w-64 h-64 mx-auto relative">
             <Image
-                src="/IMG-20240805-WA0013.jpg"
+                src="/IMG_0148.PNG"
                 alt="Descripcion"
                 fill
                 className="object-contain"
               />
           </div>
 
-          <h2 className="text-3xl text-t2fPrimary font-extrabold">¿Por qué Travel To Feel?</h2>
+          <h2 className="text-2xl text-t2fSecondary font-bold text-left">¿Por qué <span className="text-t2fPrimary">TRAVEL TO FEEL?</span></h2>
         </div>
-        <div className="w-full lg:w-1/2 h-[600px] relative">
+        <p className="w-3/4">
+          Travel to Feel nace de dos caminos que se unen. Por un lado, el <strong>Crosstraining</strong> y todo lo que ello conlleva.
+          Acabar el WOD y darle la mano a tu compañero al borde del infarto, los ánimos cuando haces RM o te sale tu primer gimnástico y las amistades que se forjan en el box y que son para siempre.
+          <br />
+          <br />
+          Por otro lado, nace de la sensación inexplicable pero increíble que surge al <strong>viajar y conocer un país nuevo, su cultura y costumbres. </strong> 
+          De enamorarte una y otra vez de los paisajes y sobre todo, de llevarte el souvenir más preciado que puedas conseguir, los momentos vividos y que recordarás para siempre.
+        </p>
+        {/* Aqui probar a poner el w-full tambien a ver cual prefiere */}
+        {/* redondeadas las esquinas o no */}
+        <div className="w-4/5 lg:w-1/2 h-[600px] lg:h-auto relative mt-8 lg:mt-0">
           <Image
             src="/IMG-20240805-WA0015.jpg"
             alt="Descripcion"
             fill
-            className="object-cover"
+            className="object-cover rounded-xl"
           />
         </div>
-      </div>
-
-      <div className="flex flex-col w-1/2 h-1/2 text-center">
-        <p>
-          Travel to Feel nace de dos caminos que se unen. Por un lado, del mayor regalo que te puede dar el Crossfit, su comunidad.
-          Todos esos momentos al acabar el WOD y darle la mano a tu compañero al borde del infarto, o esos gritos de ánimo cuando haces RM o te sale tu primer gimnástico.
-          Esas charlas que pueden alargarse horas compartiendo con tus compañeros del box, por no hablar ya de los días de partner wod que acaban en cervecita o picoteo.
-          Por otro lado, nace de la sensación inexplicable pero increíble que surge al comprar los billetes de avión para irte de viaje. 
-          Para conocer un país nuevo, su cultura y costumbres. Para enamorarte una y otra vez de los paisajes y sobre todo, para llevarte el souvenir más preciado que puedas conseguir, todos esos momentos vividos y que recordarás para siempre.
-        </p>
       </div>
 
       <div className="relative w-full min-h-screen flex flex-col lg:flex-row items-center justify-center mt-12">
