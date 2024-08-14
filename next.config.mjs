@@ -1,15 +1,11 @@
 /** @type {import('next').NextConfig} */
+
+const isProd = process.env.NODE_ENV === 'production';
+
 const nextConfig = {
     output: 'export',
-    basePath: '/travel-to-feel',
-    assetPrefix: '/travel-to-feel/',
-    images: {
-        remotePatterns: {
-            protocol: 'https',
-            hostname: 'dtote.github.io',
-            pathname: 'travel-to-feel'
-        }
-    }
+    basePath: isProd ? '/travel-to-feel' : '',
+    assetPrefix: isProd ? '/travel-to-feel/' : '',
 };
 
 export default nextConfig;

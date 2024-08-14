@@ -1,12 +1,12 @@
 import Image from "next/image";
 import KeyboardArrowDown from '@mui/icons-material/KeyboardArrowDown';
-
+import { getImageSrc } from '../utils/getImageSrc'
 export default function Home() {
   return (
     <main className="flex min-h-screen flex-col items-center justify-between p-0 m-0">
       <div className="relative w-full min-h-screen flex flex-col items-center justify-center">
         <Image
-          src="/sunlight-sea-bay-water-shore-sand-165774-wallhere.com.jpg"
+          src={getImageSrc("/sunlight-sea-bay-water-shore-sand-165774-wallhere.com.jpg")}
           alt="Descripción de la imagen"
           fill
           className="object-cover"
@@ -15,7 +15,7 @@ export default function Home() {
         />
         <div className="w-80 h-80 md:w-96 md:h-96 mx-auto absolute top-0 drop-shadow-[0_0_0.6rem_#000000ff]">
             <Image
-                src="/IMG_0148.PNG"
+                src={getImageSrc("/IMG_0148.PNG")}
                 alt="Descripcion"
                 fill
                 className="object-contain"
@@ -52,7 +52,7 @@ export default function Home() {
         {/* redondeadas las esquinas o no */}
         <div className="w-4/5 lg:w-1/2 h-[600px] lg:h-auto relative mt-8 lg:mt-0">
           <Image
-            src="/IMG-20240805-WA0015.jpg"
+            src={getImageSrc("/IMG-20240805-WA0015.jpg")}
             alt="Descripcion"
             fill
             className="object-cover rounded-xl"
@@ -64,7 +64,7 @@ export default function Home() {
         <div className="w-full text-center uppercase lg:w-1/2 p-8">
           <div className="w-full lg:w-3/4 h-[300px] mx-auto relative mb-4">
             <Image
-                src="/IMG-20240805-WA0017.jpg"
+                src={getImageSrc("/IMG-20240805-WA0017.jpg")}
                 alt="Descripcion"
                 fill
                 className="object-cover"
@@ -72,7 +72,7 @@ export default function Home() {
           </div>
           <div className="w-full lg:w-3/4 h-[300px] mx-auto relative">
             <Image
-                src="/IMG-20240805-WA0018.jpg"
+                src={getImageSrc("/IMG-20240805-WA0018.jpg")}
                 alt="Descripcion"
                 fill
                 className="object-cover"
