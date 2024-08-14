@@ -6,7 +6,7 @@ export default function Home() {
     <main className="flex min-h-screen flex-col items-center justify-between p-0 m-0">
       <div className="relative w-full min-h-screen flex flex-col items-center justify-center">
         <Image
-          src="./sunlight-sea-bay-water-shore-sand-165774-wallhere.com.jpg"
+          src="/sunlight-sea-bay-water-shore-sand-165774-wallhere.com.jpg"
           alt="Descripción de la imagen"
           fill
           className="object-cover"
@@ -15,7 +15,7 @@ export default function Home() {
         />
         <div className="w-80 h-80 md:w-96 md:h-96 mx-auto absolute top-0 drop-shadow-[0_0_0.6rem_#000000ff]">
             <Image
-                src="./IMG_0148.PNG"
+                src="/IMG_0148.PNG"
                 alt="Descripcion"
                 fill
                 className="object-contain"
@@ -24,7 +24,7 @@ export default function Home() {
         <div className="uppercase absolute inset-0 flex flex-col items-center justify-center mt-10">
           <br></br>
           <h1 className="md:px-5 text-t2fPrimary text-center text-3xl md:text-4xl lg:text-5xl font-bold drop-shadow-[0_0_0.6rem_#000000ff] ">
-            Bali y Crossfit en un sólo viaje.</h1>
+            Bali y Crosstraining en un sólo viaje.</h1>
           <br></br>
           <br></br>
           <br></br>
@@ -38,18 +38,9 @@ export default function Home() {
 
       <div id="second-section" className="w-full min-h-screen flex flex-col lg:flex-row items-center justify-center mt-12">
         <div className="w-full text-center uppercase lg:w-1/2 p-8">
-          <div className="w-64 h-64 mx-auto relative">
-            <Image
-                src="./IMG_0148.PNG"
-                alt="Descripcion"
-                fill
-                className="object-contain"
-              />
-          </div>
-
           <h2 className="text-2xl text-t2fSecondary font-bold text-left">¿Por qué <span className="text-t2fPrimary">TRAVEL TO FEEL?</span></h2>
         </div>
-        <p className="w-3/4">
+        <p className="w-3/4 text-justify">
           Travel to Feel nace de dos caminos que se unen. Por un lado, el <strong>Crosstraining</strong> y todo lo que ello conlleva.
           Acabar el WOD y darle la mano a tu compañero al borde del infarto, los ánimos cuando haces RM o te sale tu primer gimnástico y las amistades que se forjan en el box y que son para siempre.
           <br />
@@ -61,7 +52,7 @@ export default function Home() {
         {/* redondeadas las esquinas o no */}
         <div className="w-4/5 lg:w-1/2 h-[600px] lg:h-auto relative mt-8 lg:mt-0">
           <Image
-            src="./IMG-20240805-WA0015.jpg"
+            src="/IMG-20240805-WA0015.jpg"
             alt="Descripcion"
             fill
             className="object-cover rounded-xl"
@@ -73,7 +64,7 @@ export default function Home() {
         <div className="w-full text-center uppercase lg:w-1/2 p-8">
           <div className="w-full lg:w-3/4 h-[300px] mx-auto relative mb-4">
             <Image
-                src="./IMG-20240805-WA0017.jpg"
+                src="/IMG-20240805-WA0017.jpg"
                 alt="Descripcion"
                 fill
                 className="object-cover"
@@ -81,7 +72,7 @@ export default function Home() {
           </div>
           <div className="w-full lg:w-3/4 h-[300px] mx-auto relative">
             <Image
-                src="./IMG-20240805-WA0018.jpg"
+                src="/IMG-20240805-WA0018.jpg"
                 alt="Descripcion"
                 fill
                 className="object-cover"
