@@ -48,8 +48,6 @@ export default function Home() {
           Por otro lado, nace de la sensación inexplicable pero increíble que surge al <strong>viajar y conocer un país nuevo, su cultura y costumbres. </strong> 
           De enamorarte una y otra vez de los paisajes y sobre todo, de llevarte el souvenir más preciado que puedas conseguir, los momentos vividos y que recordarás para siempre.
         </p>
-        {/* Aqui probar a poner el w-full tambien a ver cual prefiere */}
-        {/* redondeadas las esquinas o no */}
         <div className="w-4/5 lg:w-1/2 h-[400px] lg:h-auto relative mt-8 lg:mt-0">
           <Image
             src={getImageSrc("/IMG-20240805-WA0015.jpg")}
@@ -87,27 +85,45 @@ export default function Home() {
               />
           </div>
         </div>
-
       </div>
 
-      <div className="w-full min-h-screen flex flex-col justify-center items-center">
-
-        <div className="w-1/2 min-h-screen flex flex-col items-center justify-center text-center mt-8">
-          <p className="">
-            ¿Eres esa persona que tiene guardado en favoritos boxes de otras partes del mundo con paisajes increíbles a su alrededor?
-            ¿Te gustaría tener un viaje sin huir de la rutina, sino volviendo a ella habiendo vivido y valorado cada momento? 
-            ¿Estás en un proceso de cambio y necesitas ese viaje para dedicártelo a ti mismo y salir de la zona de confort?
-            ¿O tal vez has intentado planificar ese viaje de ensueño y que todavía está únicamente en tu mente?
-            ¿Y si te dijera que hay muchas personas que tienen los mismos gustos y aficiones que tú y están deseando compartir las mismas experiencias?
-          </p>
-
-          <br />
-          <br />
-          
-          <h3 className="text-2xl font-black text-t2fSecondary uppercase text-shadow-custom shadow-black">Si te sientes identificado con alguna de estas preguntas, no eres raro, solo tienes que viajar con la familia t2f</h3>
+      <div className="w-full min-h-screen flex flex-col lg:flex-row items-center justify-center mt-12">
+        <div className="w-full text-center uppercase lg:w-1/2 p-8">
+          <h2 className="text-2xl md:text-4xl text-t2fSecondary font-bold text-left md:text-center">¿Qué incluye el viaje?</h2>
+        </div>
+        <div className="w-full lg:w-1/2 p-8 bg-t2fPrimary bg-opacity-15">
+          <ul className="list-disc text-justify text-base md:text-xl space-y-4">
+            <li>Asesoramiento y apoyo continuo desde el momento que reservas la plaza, así como un PDF con toda la información necesaria para el viaje.</li>
+            <li>Planificación del vioaje dsde cero con proveedores locales y la experiencia de estar viviendo en la isla.</li>
+            <li>Actividades de aventura, de integración con la cultura balinesa y como no podía faltar, de deporte.</li>
+            <li>Proceso de selección para crear un grupo de viajeros homogéneo y afin a tí.</li>
+            <li>Acompañamiento y guía antes del viaje, ayudándote con la compra de vuelos y seguro de viaje.</li>
+            <li>Grupo de Whatsapp con los demás viajeros, así como videollamadas antes del viaje para irnos conociendo antes de llegar al destino.</li>
+            <li>Acompañamiento 24/12 durante los doce días del viaje.</li>
+            <li>Todos los alojamientos con desayuno incluido de los diferentes hoteles donde nos quedaremos.</li>
+            <li>Todos los transportes terrestres y acuáticos a las actividades y excursiones de larga distancia.</li>
+            <li>Almuerzo en los días de estancia en Nusa Penida y el día de excursión de quads y rafting.</li>
+          </ul>
         </div>
       </div>
 
+      <div className="w-full min-h-screen flex flex-col lg:flex-row items-center justify-center mt-12">
+        <div className="w-full text-center uppercase lg:w-1/2 p-8">
+          <h2 className="text-2xl md:text-4xl text-t2fSecondary font-bold text-left md:text-center">¿Qué <span className="text-t2fPrimary">NO</span> incluye el viaje?</h2>
+        </div>
+        <div className="w-full lg:w-1/2 p-8 bg-t2fPrimary bg-opacity-15">
+          <ul className="list-disc text-justify text-base md:text-xl space-y-4">
+            <li><strong>Vuelos internacionales ida y vuelta.</strong> Los precios oscilan entre 1000 y 1300€, dependiendo de la antelación con la que compremos los vuelos,
+              aunque hemos elegido esas fechas por ser la mejor relación conexión-precio.
+            </li>
+            <li><strong>Seguro médico:</strong> 40-45€ dependiendo del seguro que cojas.</li>
+            <li><strong>Visado:</strong> 30€.</li>
+            <li><strong>Otros gastos durante la estancia:</strong> el resto de almuerzos y cenas, los desplazamientos cortos que haremos en moto al gimnasio y alredores del alojamiento.
+              La estimación no supera los 200€, pero esta cantidad depende de cada persona.
+            </li>
+          </ul>
+        </div>
+      </div>
     </main>
   );
 }
