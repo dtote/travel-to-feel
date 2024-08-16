@@ -92,8 +92,183 @@ export default function Home() {
         </div>
       </div>
 
+      <div className="w-full flex flex-col lg:flex-row items-center justify-center mt-12">
+        <div className="w-full text-center lg:w-1/2 p-4">
+          <div className="my-4 mx-auto w-full border-t-2 border-t2fPrimary border-dashed"></div>
+          <h2 className="text-2xl md:text-4xl text-t2fSecondary font-bold text-center">Si has llegado hasta aquí es porque algo se ha despertado en ti y te has
+            sentido identificado con nuestro POR QUÉ. 
+            <br />
+            Así que vamos con el QUÉ Y CÓMO.
+          </h2>
+          <h3 className="uppercase text-xl md:text-3xl text-t2fPrimary font-bold text-center mt-8">
+            Del 2 al 15 de diciembre descubriendo bali
+          </h3>
+          <div className="my-4 mx-auto w-full border-t-2 border-t2fPrimary border-dashed"></div>
+        </div>
+      </div>
+
+      {/* NUSA PENIDA */}
+      <div className="w-full flex flex-col lg:flex-row items-center justify-center mt-8">
+        <div className="w-full text-center uppercase lg:w-1/2">
+          <h2 className="text-2xl text-t2fPrimary font-bold text-center md:text-4xl">NUSA PENIDA</h2>
+          <div className="flex justify-center items-center my-4">
+            <span className="inline-block h-1 w-16 bg-t2fPrimary"></span>
+            <span className="mx-2 text-t2fSecondary">✦✦✦</span>
+            <span className="inline-block h-1 w-16 bg-t2fPrimary"></span>
+          </div>
+        </div>
+        <p className="w-3/4 text-justify text-base md:text-xl">
+          Nos perderemos en sus aguas cristalinas y sus playas de arena blanca. Esta isla que pertenece a Bali es la protagonista de la playa
+          más famosa de Indonesia: <strong>Kelingking Beach.</strong>
+        </p>
+        <div className="w-4/5 lg:w-1/2 h-[200px] lg:h-auto relative mt-8 lg:mt-0">
+          <Image
+            src={getImageSrc("/kelingking-beach-sunset-nusa-penida-island-bali-indonesia.jpg")}
+            alt="Descripcion"
+            fill
+            className="object-cover rounded-xl"
+          />
+        </div>
+      </div>
+
+      {/* SNORKEL */}
+      <div className="w-full flex flex-col lg:flex-row items-center justify-center mt-8">
+        <div className="w-full text-center uppercase lg:w-1/2">
+          <h2 className="text-2xl text-t2fPrimary font-bold text-center md:text-4xl">SNORKEL</h2>
+          <div className="flex justify-center items-center my-4">
+            <span className="inline-block h-1 w-16 bg-t2fPrimary"></span>
+            <span className="mx-2 text-t2fSecondary">✦✦✦</span>
+            <span className="inline-block h-1 w-16 bg-t2fPrimary"></span>
+          </div>
+        </div>
+        <p className="w-3/4 text-justify text-base md:text-xl">
+          Prepárate para descubrir la gran variedad de fauna marina que se extiende en Nusa Penida y, con un poquito de suerte,
+          ver animales tan alucinantes como mantarrayas.
+        </p>
+        <div className="w-4/5 lg:w-1/2 h-[200px] lg:h-auto relative mt-8 lg:mt-0">
+          <Image
+            src={getImageSrc("/aquarium of the oacific!!!.jpg")}
+            alt="Descripcion"
+            fill
+            className="object-cover rounded-xl"
+          />
+        </div>
+      </div>
+
+      {/* CASCADAS */}
+      <div className="w-full flex flex-col lg:flex-row items-center justify-center mt-8">
+        <div className="w-full text-center uppercase lg:w-1/2">
+          <h2 className="text-2xl text-t2fPrimary font-bold text-center md:text-4xl">CASCADAS</h2>
+          <div className="flex justify-center items-center my-4">
+            <span className="inline-block h-1 w-16 bg-t2fPrimary"></span>
+            <span className="mx-2 text-t2fSecondary">✦✦✦</span>
+            <span className="inline-block h-1 w-16 bg-t2fPrimary"></span>
+          </div>
+        </div>
+        <p className="w-3/4 text-justify text-base md:text-xl">
+          Te quedarás sin palabras con lo impresionante que son las cascadas en Bali y la fuerza con la que desciende el agua no te dejará indiferente.
+        </p>
+        <div className="w-4/5 lg:w-1/2 h-[200px] lg:h-auto relative mt-8 lg:mt-0">
+          <Image
+            src={getImageSrc("/Nungnung Waterfall, Bali.jpg")}
+            alt="Descripcion"
+            fill
+            className="object-cover rounded-xl"
+          />
+        </div>
+      </div>
+
+      {/* AMANECER EN EL MONTE BATUR */}
+      <div className="w-full flex flex-col lg:flex-row items-center justify-center mt-8">
+        <div className="w-full text-center uppercase lg:w-1/2">
+          <h2 className="text-2xl text-t2fPrimary font-bold text-center md:text-4xl">AMANECER EN EL MONTE BATUR</h2>
+          <div className="flex justify-center items-center my-4">
+            <span className="inline-block h-1 w-16 bg-t2fPrimary"></span>
+            <span className="mx-2 text-t2fSecondary">✦✦✦</span>
+            <span className="inline-block h-1 w-16 bg-t2fPrimary"></span>
+          </div>
+        </div>
+        <p className="w-3/4 text-justify text-base md:text-xl">
+          Vive una experiencia única amaneciendo a 1717 metros de altura, en el volcán activo Batur. Además de las increíbles vistas de toda la isla,
+          podrás ver el pico más alto de Bali, el volcán Agung, con 3.142 metros sobre el nivel del mar.
+        </p>
+        <div className="w-4/5 lg:w-1/2 h-[200px] lg:h-auto relative mt-8 lg:mt-0">
+          <Image
+            src={getImageSrc("/Mt_ Batur Sunrise Hike.jpg")}
+            alt="Descripcion"
+            fill
+            className="object-cover rounded-xl"
+          />
+        </div>
+      </div>
+
+      {/* KILÓMETROS INFINITOS DE ARROZALES */}
+      <div className="w-full flex flex-col lg:flex-row items-center justify-center mt-8">
+        <div className="w-full text-center uppercase lg:w-1/2">
+          <h2 className="text-2xl text-t2fPrimary font-bold text-center md:text-4xl">KILÓMETROS INFINITOS DE ARROZALES</h2>
+          <div className="flex justify-center items-center my-4">
+            <span className="inline-block h-1 w-16 bg-t2fPrimary"></span>
+            <span className="mx-2 text-t2fSecondary">✦✦✦</span>
+            <span className="inline-block h-1 w-16 bg-t2fPrimary"></span>
+          </div>
+        </div>
+        <p className="w-3/4 text-justify text-base md:text-xl">
+          Uno de los paisajes característicos de Bali son sus enormes extensiones de campos de arroz, pintando de verde los senderos que iremos recorriendo
+          a lo largo del viaje.
+        </p>
+        <div className="w-4/5 lg:w-1/2 h-[200px] lg:h-auto relative mt-8 lg:mt-0">
+          <Image
+            src={getImageSrc("/Tegalalang Rice Terrace.jpg")}
+            alt="Descripcion"
+            fill
+            className="object-cover rounded-xl"
+          />
+        </div>
+      </div>
+
+      {/* BAUTISMO DE BUCEO EN AMED */}
+      <div className="w-full flex flex-col lg:flex-row items-center justify-center mt-8">
+        <div className="w-full text-center uppercase lg:w-1/2">
+          <h2 className="text-2xl text-t2fPrimary font-bold text-center md:text-4xl">BAUTISMO DE BUCEO EN AMED</h2>
+          <div className="flex justify-center items-center my-4">
+            <span className="inline-block h-1 w-16 bg-t2fPrimary"></span>
+            <span className="mx-2 text-t2fSecondary">✦✦✦</span>
+            <span className="inline-block h-1 w-16 bg-t2fPrimary"></span>
+          </div>
+        </div>
+        <p className="w-3/4 text-justify text-base md:text-xl">
+          El lugar de Bali por excelencia para hacer inmersiones por su variedad de fauna marina. Nuestros instructores nos guiarán 
+          para descubrir todos los rincones que esconden las playas de Amed.
+        </p>
+        <div className="w-4/5 lg:w-1/2 h-[200px] lg:h-auto relative mt-8 lg:mt-0">
+          <Image
+            src={getImageSrc("/Scuba diving Bali Nusa Lembongan.jpg")}
+            alt="Descripcion"
+            fill
+            className="object-cover rounded-xl"
+          />
+        </div>
+      </div>
+
+      {/* BAUTISMO DE BUCEO EN AMED */}
+      <div className="w-full flex flex-col lg:flex-row items-center justify-center mt-8">
+        <div className="w-full text-center uppercase lg:w-1/2">
+          <h2 className="text-2xl text-t2fPrimary font-bold text-center md:text-4xl">Y muchas actividades más que complementaremos con nuestra gran pasión:
+            Disfrutar entrenando y compartiendo este deporte con nuestra familia viajera
+          </h2>
+        </div>
+        <div className="w-4/5 lg:w-1/2 h-[200px] lg:h-auto relative mt-8 lg:mt-0">
+          <Image
+            src={getImageSrc("/Tia Clair Toomey.jpg")}
+            alt="Descripcion"
+            fill
+            className="object-cover rounded-xl"
+          />
+        </div>
+      </div>
+
       <div className="w-full min-h-screen flex flex-col lg:flex-row items-center justify-center mt-12">
-        <div className="w-full text-center uppercase lg:w-1/2 p-8">
+        <div className="w-full text-center uppercase lg:w-1/2 p-4">
           <h2 className="text-2xl md:text-4xl text-t2fSecondary font-bold text-left md:text-center">¿Qué incluye el viaje?</h2>
         </div>
         <div className="w-full lg:w-1/2 p-8 bg-t2fPrimary bg-opacity-15">
@@ -112,8 +287,8 @@ export default function Home() {
         </div>
       </div>
 
-      <div className="w-full min-h-screen flex flex-col lg:flex-row items-center justify-center mt-12">
-        <div className="w-full text-center uppercase lg:w-1/2 p-8">
+      <div className="w-full flex flex-col lg:flex-row items-center justify-center mt-12">
+        <div className="w-full text-center uppercase lg:w-1/2 p-4">
           <h2 className="text-2xl md:text-4xl text-t2fSecondary font-bold text-left md:text-center">¿Qué <span className="text-t2fPrimary">NO</span> incluye el viaje?</h2>
         </div>
         <div className="w-full lg:w-1/2 p-8 bg-t2fPrimary bg-opacity-15">
@@ -129,7 +304,7 @@ export default function Home() {
           </ul>
         </div>
       </div>
-
+      
       <Accordion>
         <AccordionItem title="¿Qué incluye el viaje?">
           <div className="w-full lg:w-1/2 p-8 bg-t2fPrimary bg-opacity-15">
