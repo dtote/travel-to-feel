@@ -13,7 +13,7 @@ export default function Home() {
           priority
           quality={100}
         />
-        <div className="w-80 h-80 md:w-96 md:h-96 mx-auto absolute top-0 drop-shadow-[0_0_0.6rem_#000000ff]">
+        <div className="w-80 h-80 md:w-1/2 md:h-1/2  mx-auto absolute top-0 drop-shadow-[0_0_0.6rem_#000000ff]">
             <Image
                 src={getImageSrc("/IMG_0148.PNG")}
                 alt="Descripcion"
@@ -38,9 +38,9 @@ export default function Home() {
 
       <div id="second-section" className="w-full min-h-screen flex flex-col lg:flex-row items-center justify-center mt-12">
         <div className="w-full text-center uppercase lg:w-1/2 p-8">
-          <h2 className="text-2xl text-t2fSecondary font-bold text-left">¿Por qué <span className="text-t2fPrimary">TRAVEL TO FEEL?</span></h2>
+          <h2 className="text-2xl text-t2fSecondary font-bold text-left md:text-center md:text-4xl">¿Por qué <span className="text-t2fPrimary">TRAVEL TO FEEL?</span></h2>
         </div>
-        <p className="w-3/4 text-justify">
+        <p className="w-3/4 text-justify text-base md:text-xl">
           Travel to Feel nace de dos caminos que se unen. Por un lado, el <strong>Crosstraining</strong> y todo lo que ello conlleva.
           Acabar el WOD y darle la mano a tu compañero al borde del infarto, los ánimos cuando haces RM o te sale tu primer gimnástico y las amistades que se forjan en el box y que son para siempre.
           <br />
@@ -50,7 +50,7 @@ export default function Home() {
         </p>
         {/* Aqui probar a poner el w-full tambien a ver cual prefiere */}
         {/* redondeadas las esquinas o no */}
-        <div className="w-4/5 lg:w-1/2 h-[600px] lg:h-auto relative mt-8 lg:mt-0">
+        <div className="w-4/5 lg:w-1/2 h-[400px] lg:h-auto relative mt-8 lg:mt-0">
           <Image
             src={getImageSrc("/IMG-20240805-WA0015.jpg")}
             alt="Descripcion"
@@ -60,40 +60,37 @@ export default function Home() {
         </div>
       </div>
 
-      <div className="relative w-full min-h-screen flex flex-col lg:flex-row items-center justify-center mt-12">
+      <div className="w-full min-h-screen flex flex-col lg:flex-row items-center justify-center mt-12">
         <div className="w-full text-center uppercase lg:w-1/2 p-8">
-          <div className="w-full lg:w-3/4 h-[300px] mx-auto relative mb-4">
+          <h2 className="text-2xl md:text-4xl text-t2fSecondary font-bold text-left md:text-center">¿Por qué en <span className="text-t2fPrimary">grupos reducidos y filtrados?</span></h2>
+        </div>
+        <p className="w-3/4 text-justify text-base md:text-xl">
+          Sabemos que la conexión y la afinidad son dos aspectos imprescindibles para que la experiencia sea perfecta, y por ello, escogemos 
+          minuciosamente a personas compatibles que busquen vivir esta experiencia desde el compañerismo, la aventura, el respeto por una cultura
+          diferente y quieran salir de su zona de confort. Esta es la clave para crear una verdadera familia viajera.
+        </p>
+        <div className="w-full text-center uppercase lg:w-1/2 p-8">
+          <div className="w-full md:w-3/4 lg:w-3/4 h-[300px] md:h-[400px] lg:h-[400px] mx-auto relative mb-4">
             <Image
                 src={getImageSrc("/IMG-20240805-WA0017.jpg")}
                 alt="Descripcion"
                 fill
-                className="object-cover"
+                className="object-cover rounded-xl"
               />
           </div>
-          <div className="w-full lg:w-3/4 h-[300px] mx-auto relative">
+          <div className="w-full md:w-3/4 lg:w-3/4 h-[300px] md:h-[400px] lg:h-[400px] mx-auto relative">
             <Image
                 src={getImageSrc("/IMG-20240805-WA0018.jpg")}
                 alt="Descripcion"
                 fill
-                className="object-cover"
+                className="object-cover rounded-xl"
               />
           </div>
         </div>
-        <div className="w-full text-center uppercase lg:w-1/2 p-8">
-          <h2 className="text-3xl text-t2fPrimary text-shadow-custom shadow-black font-bold">¿Por qué en grupos <br></br> reducidos y filtrados?</h2>
-        </div>
+
       </div>
 
       <div className="w-full min-h-screen flex flex-col justify-center items-center">
-        <div className="w-1/2 h-auto flex flex-col text-center p-4 mt-16 mb-8">
-          <p className="text-t2fGrey">
-            Sabemos que la conexión y la afinidad son dos aspectos imprescindibles para que la experiencia sea perfecta, y por ello, escogemos             
-            minuciosamente a personas compatibles que busquen vivir lo mismo.
-            <br></br> 
-            <br></br>
-            Crossfiteros que crean vínculos más allá de la amistad, convirtiéndose en <strong>familia</strong>.
-          </p>
-        </div>
 
         <div className="w-1/2 min-h-screen flex flex-col items-center justify-center text-center mt-8">
           <p className="">
