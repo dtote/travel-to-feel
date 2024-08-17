@@ -75,7 +75,7 @@ export default function Home() {
         <div className="w-full text-center uppercase lg:w-1/2 p-8">
           <div className="w-full md:w-3/4 lg:w-3/4 h-[300px] md:h-[400px] lg:h-[400px] mx-auto relative mb-4">
             <Image
-                src={getImageSrc("/IMG-20240805-WA0017.jpg")}
+                src={getImageSrc("/IMG-20240805-WA0015.jpg")}
                 alt="Descripcion"
                 fill
                 className="object-cover rounded-xl"
@@ -170,7 +170,7 @@ export default function Home() {
         </p>
         <div className="w-4/5 lg:w-1/2 h-[200px] lg:h-auto relative mt-8 lg:mt-0">
           <Image
-            src={getImageSrc("/Nungnung Waterfall, Bali.jpg")}
+            src={getImageSrc("/nungnun_waterfall.jpg")}
             alt="Descripcion"
             fill
             className="object-cover rounded-xl"
@@ -253,10 +253,19 @@ export default function Home() {
       {/* BAUTISMO DE BUCEO EN AMED */}
       <div className="w-full flex flex-col lg:flex-row items-center justify-center mt-8">
         <div className="w-full text-center uppercase lg:w-1/2">
-          <h2 className="text-2xl text-t2fPrimary font-bold text-center md:text-4xl">Y muchas actividades más que complementaremos con nuestra gran pasión:
-            Disfrutar entrenando y compartiendo este deporte con nuestra familia viajera
+          <h2 className="text-2xl text-t2fPrimary font-bold text-center md:text-4xl">Y muchas actividades más que complementaremos con 
+            <br />
+            <span className="text-t2fSecondary"> nuestra gran pasión</span>
           </h2>
+          <div className="flex justify-center items-center my-4">
+            <span className="inline-block h-1 w-16 bg-t2fPrimary"></span>
+            <span className="mx-2 text-t2fSecondary">✦✦✦</span>
+            <span className="inline-block h-1 w-16 bg-t2fPrimary"></span>
+          </div>
         </div>
+        <p className="w-3/4 text-justify text-base md:text-xl">
+          Disfrutar entrenando y compartiendo este deporte con nuestra familia viajera.
+        </p>
         <div className="w-4/5 lg:w-1/2 h-[200px] lg:h-auto relative mt-8 lg:mt-0">
           <Image
             src={getImageSrc("/Tia Clair Toomey.jpg")}
@@ -304,7 +313,7 @@ export default function Home() {
           </ul>
         </div>
       </div>
-      
+
       <Accordion>
         <AccordionItem title="¿Qué incluye el viaje?">
           <div className="w-full lg:w-1/2 p-8 bg-t2fPrimary bg-opacity-15">
