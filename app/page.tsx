@@ -93,7 +93,7 @@ export default function Home() {
       </div>
 
       <div className="w-full flex flex-col lg:flex-row items-center justify-center mt-12">
-        <div className="w-full text-center lg:w-1/2 p-4">
+        <div className="w-full text-center lg:w-1/2 p-6">
           <div className="my-4 mx-auto w-full border-t-2 border-t2fPrimary border-dashed"></div>
           <h2 className="text-2xl md:text-4xl text-t2fSecondary font-bold text-center">Si has llegado hasta aquí es porque algo se ha despertado en ti y te has
             sentido identificado con nuestro POR QUÉ. 
