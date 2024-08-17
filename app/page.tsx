@@ -276,44 +276,6 @@ export default function Home() {
         </div>
       </div>
 
-      <div className="w-full min-h-screen flex flex-col lg:flex-row items-center justify-center mt-12">
-        <div className="w-full text-center uppercase lg:w-1/2 p-4">
-          <h2 className="text-2xl md:text-4xl text-t2fSecondary font-bold text-left md:text-center">¿Qué incluye el viaje?</h2>
-        </div>
-        <div className="w-full lg:w-1/2 p-8 bg-t2fPrimary bg-opacity-15">
-          <ul className="list-disc text-justify text-base md:text-xl space-y-4">
-            <li>Asesoramiento y apoyo continuo desde el momento que reservas la plaza, así como un PDF con toda la información necesaria para el viaje.</li>
-            <li>Planificación del viaje desde cero con proveedores locales y la experiencia de estar viviendo en la isla.</li>
-            <li>Actividades de aventura, de integración con la cultura balinesa y como no podía faltar, de deporte.</li>
-            <li>Proceso de selección para crear un grupo de viajeros homogéneo y afin a tí.</li>
-            <li>Acompañamiento y guía antes del viaje, ayudándote con la compra de vuelos y seguro de viaje.</li>
-            <li>Grupo de Whatsapp con los demás viajeros, así como videollamadas antes del viaje para irnos conociendo antes de llegar al destino.</li>
-            <li>Acompañamiento 24/12 durante los doce días del viaje.</li>
-            <li>Todos los alojamientos con desayuno incluido de los diferentes hoteles donde nos quedaremos.</li>
-            <li>Todos los transportes terrestres y acuáticos a las actividades y excursiones de larga distancia.</li>
-            <li>Almuerzo en los días de estancia en Nusa Penida y el día de excursión de quads y rafting.</li>
-          </ul>
-        </div>
-      </div>
-
-      <div className="w-full flex flex-col lg:flex-row items-center justify-center mt-12">
-        <div className="w-full text-center uppercase lg:w-1/2 p-4">
-          <h2 className="text-2xl md:text-4xl text-t2fSecondary font-bold text-left md:text-center">¿Qué <span className="text-t2fPrimary">NO</span> incluye el viaje?</h2>
-        </div>
-        <div className="w-full lg:w-1/2 p-8 bg-t2fPrimary bg-opacity-15">
-          <ul className="list-disc text-justify text-base md:text-xl space-y-4">
-            <li><strong>Vuelos internacionales ida y vuelta.</strong> Los precios oscilan entre 1000 y 1300€, dependiendo de la antelación con la que compremos los vuelos,
-              aunque hemos elegido esas fechas por ser la mejor relación conexión-precio.
-            </li>
-            <li><strong>Seguro médico:</strong> 40-45€ dependiendo del seguro que cojas.</li>
-            <li><strong>Visado:</strong> 30€.</li>
-            <li><strong>Otros gastos durante la estancia:</strong> el resto de almuerzos y cenas, los desplazamientos cortos que haremos en moto al gimnasio y alredores del alojamiento.
-              La estimación no supera los 200€, pero esta cantidad depende de cada persona.
-            </li>
-          </ul>
-        </div>
-      </div>
-
       <Accordion>
         <AccordionItem title="¿Qué incluye el viaje?">
           <div className="w-full lg:w-1/2 p-8 bg-t2fPrimary bg-opacity-15">
