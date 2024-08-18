@@ -95,14 +95,14 @@ export default function Home() {
       <div className="w-full flex flex-col lg:flex-row items-center justify-center mt-12">
         <div className="w-full text-center lg:w-1/2 p-6">
           <div className="my-4 mx-auto w-full border-t-2 border-t2fPrimary border-dashed"></div>
-          <h2 className="text-2xl md:text-4xl text-t2fSecondary font-bold text-center">Si has llegado hasta aquí es porque algo se ha despertado en ti y te has
-            sentido identificado con nuestro POR QUÉ. 
+          <h2 className="text-2xl md:text-4xl text-t2fPrimary  text-center">Si has llegado hasta aquí es porque te has
+            sentido identificado con nuestro <span className="text-t2fSecondary">POR QUÉ</span>. 
             <br />
-            Así que vamos con el QUÉ Y CÓMO.
+            Así que vamos con el <span className="text-t2fSecondary">QUÉ Y CÓMO</span> .
           </h2>
-          <h3 className="uppercase text-xl md:text-3xl text-t2fPrimary font-bold text-center mt-8">
+          <h2 className="uppercase text-2xl md:text-3xl text-t2fSecondary font-extrabold text-center mt-8 p-4 bg-t2fPrimary rounded-lg">
             Del 2 al 15 de diciembre descubriendo bali
-          </h3>
+          </h2>
           <div className="my-4 mx-auto w-full border-t-2 border-t2fPrimary border-dashed"></div>
         </div>
       </div>
@@ -308,6 +308,44 @@ export default function Home() {
           </div>
         </AccordionItem>
       </Accordion>
+
+      <div className="w-full flex flex-col lg:flex-row items-center justify-center mt-12">
+        <div className="w-full text-center lg:w-1/2 p-6">
+          <div className="my-4 mx-auto w-full border-t-2 border-t2fPrimary border-dashed"></div>
+          <p className="text-xl md:text-3xl text-t2fPrimary font-bold text-center mt-8">
+            Ya te habrás dado cuenta que este NO es el típico pack de viaje en masa que no tiene en cuenta tus gustos ni intereses, mucho menos aún que incluya Crosstraining en el itinerario.
+          </p>
+          <h3 className="text-xl md:text-3xl text-t2fPrimary font-bold text-center mt-8">
+            NUESTRA FILOSOFÍA DE VIAJE ES CLARA: hacer que nuestros viajeros vivan la experiencia de sus sueños con personas exhaustivamente
+            seleccionadas para formar el mejor grupo y con ello, la mejor familia crosstraveler.
+          </h3>
+          <h3 className="text-xl md:text-3xl text-t2fPrimary font-bold text-center mt-8">
+            TU DECIDES. VIVIRLO O SOÑARLO SOLO DEPENDE DE TI.
+          </h3>
+          <div className="my-4 mx-auto w-full border-t-2 border-t2fPrimary border-dashed"></div>
+        </div>
+      </div>
+
+      <div className="w-full flex flex-col lg:flex-row items-center justify-center">
+        <div className="w-5/6 mx-auto bg-t2fSecondary bg-opacity-25 p-4 border-2 border-t2fSecondary rounded-lg shadow-xl">
+          <h2 className="text-2xl text-t2fPrimary font-extrabold text-center md:text-4xl uppercase">
+            <span className="text-t2fSecondary">4 Pasos</span> 
+            <br />
+            para tener tu plaza</h2>
+          <div className="w-full lg:w-1/2 p-8">
+            <ol className="list-decimal text-justify text-base md:text-xl space-y-4">
+              <li>Completar un sencillo formulario que te dejaremos a continuación para poder conocerte y asegurar que vivas la experiencia con esas personas afines de las que te hablamos anteriormente.
+              </li>
+              <li>Una vez recibido el formulario nos pondremos en contacto contigo para concertar una videollamada de unos 30 minutos. Resolveremos dudas,
+                 daremos más información sobre el viaje y nos aseguraremos de que Travel To Feel es la decisión correcta para tu viaje de ensueño.
+              </li>
+              <li>Si ambos estamos de acuerdo en que sí es para ti el viaje, solo quedará reservar la plaza y listo ¡Bienvenido a la familia!.</li>
+              <li>Cuando se complete el grupo mínimo, haremos un grupo de Whatsapp para dar toda la información necesaria, hacer videollamadas e irnos conociendo y tengan apoyo 24h desde ya para cualquier duda que tengan.
+              </li>
+            </ol>
+          </div>
+        </div>
+      </div>
 
     </main>
   );
