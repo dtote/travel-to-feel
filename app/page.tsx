@@ -18,7 +18,7 @@ export default function Home() {
           priority
           quality={100}
         />
-        <div className="w-80 h-80 md:w-1/2 md:h-1/2  mx-auto absolute top-0 drop-shadow-[0_0_0.6rem_#000000ff]">
+        <div className="w-80 h-80 md:w-1/2 md:h-1/2 mx-auto absolute top-0 drop-shadow-[0_0_0.6rem_#000000ff]">
             <Image
                 src={getImageSrc("/IMG_0148.PNG")}
                 alt="Descripcion"
@@ -28,20 +28,20 @@ export default function Home() {
         </div>
         <div className="uppercase absolute inset-0 flex flex-col items-center justify-center mt-10">
           <br></br>
-          <h1 className="md:px-5 text-t2fPrimary text-center text-3xl md:text-4xl lg:text-5xl font-bold drop-shadow-[0_0_0.6rem_#000000ff] ">
+          <h1 className="md:px-5 text-t2fPrimary text-center text-2xl md:text-3xl lg:text-5xl font-bold drop-shadow-[0_0_0.6rem_#000000ff] ">
             Bali y Crosstraining en un sólo viaje.</h1>
           <br></br>
           <br></br>
           <br></br>
-          <h1 className="md:px-5 text-t2fPrimary text-center text-2xl md:text-3xl lg:text-4xl font-bold drop-shadow-[0_0_0.6rem_#000000cc]">
+          <h1 className="md:px-4 text-t2fPrimary text-center text-xl md:text-2xl lg:text-4xl font-bold drop-shadow-[0_0_0.6rem_#000000cc]">
             Creada para personas que comparten la pasión de viajar y entrenar crosstraining en comunidad</h1>
         </div>
-        <a href="#second-section" className="animate-bounce absolute bottom-10 text-t2fPrimary text-7xl drop-shadow-[0_0_0.6rem_#ffffffff]">
+        <a href="#second-section" className="animate-bounce absolute bottom-10 md:bottom-5 text-t2fPrimary text-5xl md:text-6xl lg:text-7xl drop-shadow-[0_0_0.6rem_#ffffffff]">
           <KeyboardArrowDown fontSize="inherit" />
         </a>
       </div>
 
-      <div id="second-section" className="w-full min-h-screen flex flex-col lg:flex-row items-center justify-center mt-12">
+      <div id="second-section" className="w-full min-h-screen flex flex-col items-center justify-center mt-12">
         <div className="w-full text-center uppercase lg:w-1/2 p-8">
           <h2 className="text-2xl text-t2fSecondary font-bold text-left md:text-center md:text-4xl">¿Por qué <span className="text-t2fPrimary">TRAVEL TO FEEL?</span></h2>
         </div>
@@ -53,7 +53,7 @@ export default function Home() {
           Por otro lado, nace de la sensación inexplicable pero increíble que surge al <strong>viajar y conocer un país nuevo, su cultura y costumbres. </strong> 
           De enamorarte una y otra vez de los paisajes y sobre todo, de llevarte el souvenir más preciado que puedas conseguir, los momentos vividos y que recordarás para siempre.
         </p>
-        <div className="w-4/5 lg:w-1/2 h-[200px] md:h-[400px] lg:h-auto relative mt-8 lg:mt-0">
+        <div className="w-4/5 lg:w-3/4 h-[200px] md:h-[400px] lg:h-[600px] relative mt-8">
           <Image
             src={getImageSrc("/pexels-belle-co-99483-1000445.JPG")}
             alt="Descripcion"
@@ -95,7 +95,7 @@ export default function Home() {
       <div className="w-full flex flex-col lg:flex-row items-center justify-center mt-12">
         <div className="w-full text-center lg:w-1/2 p-6">
           <div className="my-4 mx-auto w-full border-t-2 border-t2fPrimary border-dashed"></div>
-          <p className="text-lg md:text-3xl text-t2fPrimary  text-center">Si has llegado hasta aquí es porque te has
+          <p className="md:text-xl text-t2fPrimary  text-center">Si has llegado hasta aquí es porque te has
             sentido identificado con nuestro <span className="text-t2fSecondary">POR QUÉ</span>. 
             <br />
             Así que vamos con el <span className="text-t2fSecondary">QUÉ Y CÓMO</span> .
@@ -286,7 +286,7 @@ export default function Home() {
               <li>Proceso de selección para crear un grupo de viajeros homogéneo y afin a tí.</li>
               <li>Acompañamiento y guía antes del viaje, ayudándote con la compra de vuelos y seguro de viaje.</li>
               <li>Grupo de Whatsapp con los demás viajeros, así como videollamadas antes del viaje para irnos conociendo antes de llegar al destino.</li>
-              <li>Acompañamiento 24/12 durante los doce días del viaje.</li>
+              <li>Acompañamiento 24H durante los doce días del viaje.</li>
               <li>Todos los alojamientos con desayuno incluido de los diferentes hoteles donde nos quedaremos.</li>
               <li>Todos los transportes terrestres y acuáticos a las actividades y excursiones de larga distancia.</li>
               <li>Almuerzo en los días de estancia en Nusa Penida y el día de excursión de quads y rafting.</li>
