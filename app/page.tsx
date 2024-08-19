@@ -95,11 +95,11 @@ export default function Home() {
       <div className="w-full flex flex-col lg:flex-row items-center justify-center mt-12">
         <div className="w-full text-center lg:w-1/2 p-6">
           <div className="my-4 mx-auto w-full border-t-2 border-t2fPrimary border-dashed"></div>
-          <h2 className="text-2xl md:text-4xl text-t2fPrimary  text-center">Si has llegado hasta aquí es porque te has
+          <p className="text-lg md:text-3xl text-t2fPrimary  text-center">Si has llegado hasta aquí es porque te has
             sentido identificado con nuestro <span className="text-t2fSecondary">POR QUÉ</span>. 
             <br />
             Así que vamos con el <span className="text-t2fSecondary">QUÉ Y CÓMO</span> .
-          </h2>
+          </p>
           <h2 className="uppercase text-2xl md:text-3xl text-t2fSecondary font-extrabold text-center mt-8 p-4 bg-t2fPrimary rounded-lg">
             Del 2 al 15 de diciembre descubriendo bali
           </h2>
