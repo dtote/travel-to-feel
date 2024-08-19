@@ -53,9 +53,9 @@ export default function Home() {
           Por otro lado, nace de la sensación inexplicable pero increíble que surge al <strong>viajar y conocer un país nuevo, su cultura y costumbres. </strong> 
           De enamorarte una y otra vez de los paisajes y sobre todo, de llevarte el souvenir más preciado que puedas conseguir, los momentos vividos y que recordarás para siempre.
         </p>
-        <div className="w-4/5 lg:w-1/2 h-[400px] lg:h-auto relative mt-8 lg:mt-0">
+        <div className="w-4/5 lg:w-1/2 h-[200px] md:h-[400px] lg:h-auto relative mt-8 lg:mt-0">
           <Image
-            src={getImageSrc("/IMG-20240805-WA0015.jpg")}
+            src={getImageSrc("/pexels-belle-co-99483-1000445.JPG")}
             alt="Descripcion"
             fill
             className="object-cover rounded-xl"
@@ -315,12 +315,23 @@ export default function Home() {
           <p className="text-xl md:text-3xl text-t2fPrimary font-bold text-center mt-8">
             Ya te habrás dado cuenta que este NO es el típico pack de viaje en masa que no tiene en cuenta tus gustos ni intereses, mucho menos aún que incluya Crosstraining en el itinerario.
           </p>
+          <div className="flex justify-center items-center my-4">
+            <span className="inline-block h-1 w-16 bg-t2fPrimary"></span>
+            <span className="mx-2 text-t2fSecondary">✦✦✦</span>
+            <span className="inline-block h-1 w-16 bg-t2fPrimary"></span>
+          </div>
+          <h2 className="text-2xl text-t2fSecondary font-bold text-center md:text-4xl">NUESTRA FILOSOFÍA DE VIAJE ES CLARA</h2>
           <h3 className="text-xl md:text-3xl text-t2fPrimary font-bold text-center mt-8">
-            NUESTRA FILOSOFÍA DE VIAJE ES CLARA: hacer que nuestros viajeros vivan la experiencia de sus sueños con personas exhaustivamente
-            seleccionadas para formar el mejor grupo y con ello, la mejor familia crosstraveler.
+            Hacer que nuestros viajeros vivan la experiencia de sus sueños con personas exhaustivamente
+            seleccionadas para formar el mejor grupo y con ello, <span className="text-t2fSecondary"> la mejor familia crosstraveler</span>.
           </h3>
-          <h3 className="text-xl md:text-3xl text-t2fPrimary font-bold text-center mt-8">
-            TU DECIDES. VIVIRLO O SOÑARLO SOLO DEPENDE DE TI.
+          <div className="flex justify-center items-center my-4">
+            <span className="inline-block h-1 w-16 bg-t2fPrimary"></span>
+            <span className="mx-2 text-t2fSecondary">✦✦✦</span>
+            <span className="inline-block h-1 w-16 bg-t2fPrimary"></span>
+          </div>
+          <h3 className="uppercase text-xl md:text-3xl text-t2fSecondary font-bold text-center mt-8 p-4 bg-t2fPrimary rounded-lg">
+            Tu decides. Vivirlo o soñarlo solo depende de ti.
           </h3>
           <div className="my-4 mx-auto w-full border-t-2 border-t2fPrimary border-dashed"></div>
         </div>
