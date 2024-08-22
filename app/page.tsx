@@ -123,7 +123,7 @@ export default function Home() {
           Nos perderemos en sus aguas cristalinas y sus playas de arena blanca. Esta isla que pertenece a Bali es la protagonista de la playa
           más famosa de Indonesia: <strong>Kelingking Beach.</strong>
         </p>
-        <div className="w-4/5 lg:w-1/2 h-[200px] md:h-[400px] lg:h-[600px] relative mt-8">
+        <div className="w-4/5 lg:w-1/2 h-[200px] md:h-[600px] relative mt-8">
             <Image
               src={getImageSrc("/kelingking_beach_nusa_penida.jpg")}
               alt="Kelingking Beach en Nusa Penida, Bali, con su icónica formación rocosa rodeada de aguas azules y arena blanca al atardecer."
