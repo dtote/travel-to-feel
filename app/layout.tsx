@@ -6,7 +6,7 @@ const inter = Inter({ subsets: ["latin"] });
 
 export const metadata: Metadata = {
   title: "Travel To Feel",
-  description: "Crosstraining + Viajes + Conocer gente",
+  description: "Uniendo la pasión por viajar y el crosstraining.",
 };
 
 export default function RootLayout({
