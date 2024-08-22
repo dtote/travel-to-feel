@@ -22,17 +22,9 @@ export default function Home() {
           quality={100}
         />
         <div className="flex justify-center items-center w-full h-1/2 absolute top-0">
-          <SvgLogo width={300} height={300} className="object-contain w-full h-full drop-shadow-[0_0_0.6rem_#000000ff]"  />
+          <SvgLogo width={280} height={280} className="object-contain w-full drop-shadow-[0_0_0.6rem_#000000ff]"  />
         </div>
 
-        {/* <div className="w-80 h-80 md:w-1/2 md:h-1/2 mx-auto absolute top-0 drop-shadow-[0_0_0.6rem_#000000ff]">
-            <Image
-                src={getImageSrc("/IMG_0148.PNG")}
-                alt="Descripcion"
-                fill
-                className="object-contain"
-              />
-        </div> */}
         <div className="uppercase absolute inset-0 flex flex-col items-center justify-center mt-10">
           <br></br>
           <h1 className="md:px-5 text-t2fPrimary text-center text-2xl md:text-3xl lg:text-4xl font-bold drop-shadow-[0_0_0.6rem_#000000ff] ">
@@ -60,7 +52,7 @@ export default function Home() {
           Por otro lado, nace de la sensación inexplicable pero increíble que surge al <strong>viajar y conocer un país nuevo, su cultura y costumbres. </strong> 
           De enamorarte una y otra vez de los paisajes y sobre todo, de llevarte el souvenir más preciado que puedas conseguir, los momentos vividos y que recordarás para siempre.
         </p>
-        <div className="w-full md:w-3/4 lg:w-3/4 h-[300px] md:h-[400px] lg:h-[400px] mx-auto relative mt-12">
+        <div className="w-11/12 md:w-3/4 lg:w-3/4 h-[250px] md:h-[400px] lg:h-[400px] mx-auto relative mt-12">
           <Image
             src={getImageSrc("/pexels-belle-co-99483-1000445.JPG")}
             alt="Descripcion"
@@ -80,7 +72,7 @@ export default function Home() {
           diferente y quieran salir de su zona de confort. Esta es la clave para crear una verdadera familia viajera.
         </p>
         <div className="w-full lg:w-10/12 lg:flex lg:flex-row lg:justify-between lg:items-center text-center uppercase p-8">
-          <div className="w-full md:w-3/4 lg:w-1/2 h-[300px] md:h-[400px] lg:h-[500px] mx-auto lg:mx-4 relative mb-4 lg:mb-0">
+          <div className="w-full md:w-3/4 lg:w-1/2 h-[250px] md:h-[400px] lg:h-[500px] mx-auto lg:mx-4 relative mb-4 lg:mb-0">
             <Image
                 src={getImageSrc("/IMG-20240805-WA0015.jpg")}
                 alt="Descripcion"
@@ -399,42 +391,6 @@ export default function Home() {
           ¡Únete ya a la familia T2F!
         </a>
       </div>
-
-      {/* <footer className="w-full bg-white text-t2fSecondary py-2 mt-12">
-        <div className="w-full mx-auto flex flex-col items-center justify-between">
-          <div className="w-full flex flex-col items-center justify-center">
-            <SvgLogo width={200} height={200} className="w-200 h-200 md:w-400 md:h-400 lg:w-600 lg:h-600"  />
-
-            <p className="text-center md:text-left text-sm md:text-base">
-              Uniendo la pasión por viajar y el crosstraining.
-            </p>
-          </div>
-
-          <div className="w-full flex flex-col md:flex-row items-center justify-between mt-4 border-t border-opacity-50 border-t2fSecondary pt-4">
-            <div className="w-1/2 flex flex-col items-center justify-center mb-8 md:mb-0">
-              <h3 className="font-bold text-lg mb-4">Síguenos</h3>
-              <div className="flex space-x-6">
-                <a href="https://www.instagram.com/traveltofeel_" target="_blank" rel="noopener noreferrer">
-                  <InstagramIcon className="hover:text-white transition duration-500" fontSize="large" />
-                </a>
-              </div>
-            </div>
-
-            <div className="w-1/2 flex flex-col items-center justify-center">
-              <h3 className="font-bold text-lg mb-4">Contáctanos</h3>
-              <p className="text-sm md:text-base">
-                <a href="mailto:contacto@traveltofeel.com" className="underline hover:text-white transition duration-500">
-                  contacto@traveltofeel.com
-                </a>
-              </p>
-            </div>
-          </div>
-        </div>
-
-        <div className="mt-6 border-t border-t2fSecondary border-opacity-50 pt-4 text-center text-sm">
-          <p>&copy; {new Date().getFullYear()} Travel To Feel. Todos los derechos reservados.</p>
-        </div>
-      </footer> */}
 
       <footer className="w-full bg-t2fSecondary text-t2fPrimary py-2 mt-12">
         <div className="w-full mx-auto flex flex-col items-center justify-between">
