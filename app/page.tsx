@@ -1,9 +1,12 @@
 import Image from "next/image"
+import LogoSVG from '../public/t2f_vectorized_logo.svg'
 import KeyboardArrowDown from '@mui/icons-material/KeyboardArrowDown'
+import InstagramIcon from '@mui/icons-material/Instagram'
 import Accordion from "./components/Accordion"
 import AccordionItem from "./components/AccordionItem"
-
+import ScrollLink from "./components/ScrollLink"
 import { getImageSrc } from '../utils/getImageSrc'
+import SvgLogo from "./components/SvgLogo"
 
 
 export default function Home() {
@@ -18,27 +21,31 @@ export default function Home() {
           priority
           quality={100}
         />
-        <div className="w-80 h-80 md:w-1/2 md:h-1/2 mx-auto absolute top-0 drop-shadow-[0_0_0.6rem_#000000ff]">
+        <div className="flex justify-center items-center w-full h-1/2 absolute top-0">
+          <SvgLogo width={300} height={300} className="object-contain w-full h-full drop-shadow-[0_0_0.6rem_#000000ff]"  />
+        </div>
+
+        {/* <div className="w-80 h-80 md:w-1/2 md:h-1/2 mx-auto absolute top-0 drop-shadow-[0_0_0.6rem_#000000ff]">
             <Image
                 src={getImageSrc("/IMG_0148.PNG")}
                 alt="Descripcion"
                 fill
                 className="object-contain"
               />
-        </div>
+        </div> */}
         <div className="uppercase absolute inset-0 flex flex-col items-center justify-center mt-10">
           <br></br>
-          <h1 className="md:px-5 text-t2fPrimary text-center text-2xl md:text-3xl lg:text-5xl font-bold drop-shadow-[0_0_0.6rem_#000000ff] ">
+          <h1 className="md:px-5 text-t2fPrimary text-center text-2xl md:text-3xl lg:text-4xl font-bold drop-shadow-[0_0_0.6rem_#000000ff] ">
             Bali y Crosstraining en un sólo viaje.</h1>
           <br></br>
           <br></br>
           <br></br>
-          <h1 className="md:px-4 text-t2fPrimary text-center text-xl md:text-2xl lg:text-4xl font-bold drop-shadow-[0_0_0.6rem_#000000cc]">
+          <h1 className="md:px-4 text-t2fPrimary text-center text-xl md:text-2xl lg:text-3xl font-bold drop-shadow-[0_0_0.6rem_#000000cc]">
             Creada para personas que comparten la pasión de viajar y entrenar crosstraining en comunidad</h1>
         </div>
-        <a href="#second-section" className="animate-bounce absolute bottom-10 md:bottom-5 text-t2fPrimary text-5xl md:text-6xl lg:text-7xl drop-shadow-[0_0_0.6rem_#ffffffff]">
+        <ScrollLink targetId="second-section" className="animate-bounce absolute bottom-10 md:bottom-5 text-t2fPrimary text-5xl md:text-6xl lg:text-7xl drop-shadow-[0_0_0.6rem_#ffffffff]">
           <KeyboardArrowDown fontSize="inherit" />
-        </a>
+        </ScrollLink>
       </div>
 
       <div id="second-section" className="w-full min-h-screen flex flex-col items-center justify-center mt-12">
@@ -95,7 +102,7 @@ export default function Home() {
       <div className="w-full flex flex-col lg:flex-row items-center justify-center mt-12">
         <div className="w-full text-center p-6">
           <div className="my-4 mx-auto w-full border-t-2 border-t2fPrimary border-dashed"></div>
-          <p className=" lg:text-3xl text-t2fPrimary text-center">Si has llegado hasta aquí es porque te has
+          <p className="md:text-2xl lg:text-3xl text-t2fPrimary text-center">Si has llegado hasta aquí es porque te has
             sentido identificado con nuestro <span className="text-t2fSecondary">POR QUÉ</span>. 
             <br />
             Así que vamos con el <span className="text-t2fSecondary">QUÉ Y CÓMO</span> .
@@ -311,10 +318,25 @@ export default function Home() {
         </AccordionItem>
       </Accordion>
 
-      <div className="w-full flex flex-col lg:flex-row items-center justify-center mt-12">
-        <div className="w-full text-center lg:w-1/2 p-6">
+      {/* <div className="w-full flex flex-col lg:flex-row items-center justify-center mt-12">
+        <div className="w-full text-center p-6">
           <div className="my-4 mx-auto w-full border-t-2 border-t2fPrimary border-dashed"></div>
-          <p className="text-xl md:text-3xl text-t2fPrimary font-bold text-center mt-8">
+          <p className="lg:text-3xl text-t2fPrimary text-center">Si has llegado hasta aquí es porque te has
+            sentido identificado con nuestro <span className="text-t2fSecondary">POR QUÉ</span>. 
+            <br />
+            Así que vamos con el <span className="text-t2fSecondary">QUÉ Y CÓMO</span> .
+          </p>
+          <h2 className="uppercase text-2xl md:text-3xl text-t2fSecondary font-extrabold text-center mt-8 p-4 bg-t2fPrimary max-w-md mx-auto rounded-lg">
+            Del 2 al 15 de diciembre descubriendo bali
+          </h2>
+          <div className="my-4 mx-auto w-full border-t-2 border-t2fPrimary border-dashed"></div>
+        </div>
+      </div> */}
+
+      <div className="w-full flex flex-col lg:flex-row items-center justify-center mt-12">
+        <div className="w-full text-center p-6">
+          <div className="my-4 mx-auto w-full border-t-2 border-t2fPrimary border-dashed"></div>
+          <p className="md:text-2xl lg:text-3xl text-t2fPrimary font-bold text-center mt-8">
             Ya te habrás dado cuenta que este NO es el típico pack de viaje en masa que no tiene en cuenta tus gustos ni intereses, mucho menos aún que incluya Crosstraining en el itinerario.
           </p>
           <div className="flex justify-center items-center my-4">
@@ -332,7 +354,7 @@ export default function Home() {
             <span className="mx-2 text-t2fSecondary">✦✦✦</span>
             <span className="inline-block h-1 w-16 bg-t2fPrimary"></span>
           </div>
-          <h3 className="uppercase text-xl md:text-3xl text-t2fSecondary font-bold text-center mt-8 p-4 bg-t2fPrimary rounded-lg">
+          <h3 className="uppercase text-xl md:text-3xl text-t2fSecondary font-bold text-center mt-8 p-4 bg-t2fPrimary max-w-2xl mx-auto rounded-lg">
             Tu decides. 
             <br />
             Vivirlo o soñarlo solo depende de ti.
@@ -347,7 +369,7 @@ export default function Home() {
             <span className="text-t2fSecondary">4 Pasos</span> 
             <br />
             para tener tu plaza</h2>
-          <div className="w-full lg:w-1/2 p-8">
+          <div className="w-full p-8">
             <ol className="list-decimal text-justify text-base md:text-xl space-y-4">
               <li>Completar un sencillo formulario que te dejaremos a continuación para poder conocerte y asegurar que vivas la experiencia con esas personas afines de las que te hablamos anteriormente.
               </li>
@@ -362,6 +384,93 @@ export default function Home() {
         </div>
       </div>
 
+      <div className="md:w-5/6 text-center mt-8 p-6">
+        <p className="md:text-2xl lg:text-3xl font-medium text-gray-700">
+         Aquí comienza tu viaje, únete a nosotros para rellenar el formulario.
+        </p>
+      </div>
+      <div className="w-full flex justify-center mt-4">
+        <a
+          href="https://www.ejemplo.com"
+          target="_blank"
+          rel="noopener noreferrer"
+          className="bg-t2fSecondary text-white text-xl font-bold py-3 px-6 rounded-lg shadow-lg hover:bg-t2fPrimary transition duration-300 inline-block"
+        >
+          ¡Únete ya a la familia T2F!
+        </a>
+      </div>
+
+      {/* <footer className="w-full bg-white text-t2fSecondary py-2 mt-12">
+        <div className="w-full mx-auto flex flex-col items-center justify-between">
+          <div className="w-full flex flex-col items-center justify-center">
+            <SvgLogo width={200} height={200} className="w-200 h-200 md:w-400 md:h-400 lg:w-600 lg:h-600"  />
+
+            <p className="text-center md:text-left text-sm md:text-base">
+              Uniendo la pasión por viajar y el crosstraining.
+            </p>
+          </div>
+
+          <div className="w-full flex flex-col md:flex-row items-center justify-between mt-4 border-t border-opacity-50 border-t2fSecondary pt-4">
+            <div className="w-1/2 flex flex-col items-center justify-center mb-8 md:mb-0">
+              <h3 className="font-bold text-lg mb-4">Síguenos</h3>
+              <div className="flex space-x-6">
+                <a href="https://www.instagram.com/traveltofeel_" target="_blank" rel="noopener noreferrer">
+                  <InstagramIcon className="hover:text-white transition duration-500" fontSize="large" />
+                </a>
+              </div>
+            </div>
+
+            <div className="w-1/2 flex flex-col items-center justify-center">
+              <h3 className="font-bold text-lg mb-4">Contáctanos</h3>
+              <p className="text-sm md:text-base">
+                <a href="mailto:contacto@traveltofeel.com" className="underline hover:text-white transition duration-500">
+                  contacto@traveltofeel.com
+                </a>
+              </p>
+            </div>
+          </div>
+        </div>
+
+        <div className="mt-6 border-t border-t2fSecondary border-opacity-50 pt-4 text-center text-sm">
+          <p>&copy; {new Date().getFullYear()} Travel To Feel. Todos los derechos reservados.</p>
+        </div>
+      </footer> */}
+
+      <footer className="w-full bg-t2fSecondary text-t2fPrimary py-2 mt-12">
+        <div className="w-full mx-auto flex flex-col items-center justify-between">
+
+          <div className="w-full flex flex-col items-center justify-center">
+            <SvgLogo width={200} height={200} className="object-contain w-1/2 drop-shadow-[0_0_0.6rem_#000000ff]"  />
+            <p className="text-center md:text-left text-sm md:text-base">
+              Uniendo la pasión por viajar y el crosstraining.
+            </p>
+          </div>
+
+          <div className="w-full flex flex-col md:flex-row items-center justify-between mt-4 border-t border-opacity-50 border-t2fPrimary pt-4">
+            <div className="w-1/2 flex flex-col items-center justify-center mb-8 md:mb-0">
+              <h3 className="font-bold text-lg mb-4">Síguenos</h3>
+              <div className="flex space-x-6">
+                <a href="https://www.instagram.com/traveltofeel_" target="_blank" rel="noopener noreferrer">
+                  <InstagramIcon className="hover:text-white transition duration-500" fontSize="large" />
+                </a>
+              </div>
+            </div>
+
+            <div className="w-1/2 flex flex-col items-center justify-center">
+              <h3 className="font-bold text-lg mb-4">Contáctanos</h3>
+              <p className="text-sm md:text-base">
+                <a href="mailto:contacto@traveltofeel.com" className="underline hover:text-white transition duration-500">
+                  contacto@traveltofeel.com
+                </a>
+              </p>
+            </div>
+          </div>
+        </div>
+
+        <div className="mt-6 border-t border-t2fPrimary border-opacity-50 pt-4 text-center text-sm">
+          <p>&copy; {new Date().getFullYear()} Travel To Feel. Todos los derechos reservados.</p>
+        </div>
+      </footer>
     </main>
   );
 }
