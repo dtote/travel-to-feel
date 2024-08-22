@@ -18,7 +18,7 @@ const ScrollLink: React.FC<ScrollLinkProps> = ({ targetId, className, children }
     }
 
     return (
-        <a href={`#${targetId}`} onClick={handleScroll} className={className}>
+        <a aria-label="Desplazarse hacia abajo" href={`#${targetId}`} onClick={handleScroll} className={className}>
             {children}
         </a>
     )

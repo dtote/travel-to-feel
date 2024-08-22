@@ -1,5 +1,4 @@
 import Image from "next/image"
-import LogoSVG from '../public/t2f_vectorized_logo.svg'
 import KeyboardArrowDown from '@mui/icons-material/KeyboardArrowDown'
 import InstagramIcon from '@mui/icons-material/Instagram'
 import Accordion from "./components/Accordion"
@@ -14,20 +13,20 @@ export default function Home() {
     <main className="flex min-h-screen flex-col items-center justify-between p-0 m-0">
       <div className="relative w-full min-h-screen flex flex-col items-center justify-center">
         <Image
-          src={getImageSrc("/sunlight-sea-bay-water-shore-sand-165774-wallhere.com.jpg")}
-          alt="Descripción de la imagen"
+          src={getImageSrc("/sunlight_sea.jpg")}
+          alt="Paisaje costero con el sol brillando sobre el mar, creando reflejos de agua."
           fill
           className="object-cover"
           priority
           quality={100}
         />
-        <div className="flex justify-center items-center w-full h-1/2 absolute top-0">
-          <SvgLogo width={280} height={280} className="object-contain w-full drop-shadow-[0_0_0.6rem_#000000ff]"  />
+        <div className="flex justify-center items-center w-full h-2/5 absolute top-2 drop-shadow-[0_0_0.6rem_#000000ff]">
+          <SvgLogo width={300} height={300} className="object-contain w-full"/>
         </div>
 
         <div className="uppercase absolute inset-0 flex flex-col items-center justify-center mt-10">
           <br></br>
-          <h1 className="md:px-5 text-t2fPrimary text-center text-2xl md:text-3xl lg:text-4xl font-bold drop-shadow-[0_0_0.6rem_#000000ff] ">
+          <h1 className="md:px-5 text-t2fPrimary text-center text-2xl md:text-3xl lg:text-4xl font-bold drop-shadow-[0_0_0.6rem_#000000ff]">
             Bali y Crosstraining en un sólo viaje.</h1>
           <br></br>
           <br></br>
@@ -36,7 +35,8 @@ export default function Home() {
             Creada para personas que comparten la pasión de viajar y entrenar crosstraining en comunidad</h1>
         </div>
         <ScrollLink targetId="second-section" className="animate-bounce absolute bottom-10 md:bottom-5 text-t2fPrimary text-5xl md:text-6xl lg:text-7xl drop-shadow-[0_0_0.6rem_#ffffffff]">
-          <KeyboardArrowDown fontSize="inherit" />
+          <span className="sr-only">Desplazarse hacia abajo a la siguiente sección</span>
+          <KeyboardArrowDown fontSize="inherit"/>
         </ScrollLink>
       </div>
 
@@ -54,10 +54,11 @@ export default function Home() {
         </p>
         <div className="w-11/12 md:w-3/4 lg:w-3/4 h-[250px] md:h-[400px] lg:h-[400px] mx-auto relative mt-12">
           <Image
-            src={getImageSrc("/pexels-belle-co-99483-1000445.JPG")}
-            alt="Descripcion"
+            src={getImageSrc("/people_jumping.jpg")}
+            alt="Grupo de personas saltando al mismo tiempo en la playa y con el atardecer detrás de ellas."
             fill
             className="object-cover rounded-xl"
+            loading="lazy"
           />
         </div>
       </div>
@@ -74,18 +75,20 @@ export default function Home() {
         <div className="w-full lg:w-10/12 lg:flex lg:flex-row lg:justify-between lg:items-center text-center uppercase p-8">
           <div className="w-full md:w-3/4 lg:w-1/2 h-[250px] md:h-[400px] lg:h-[500px] mx-auto lg:mx-4 relative mb-4 lg:mb-0">
             <Image
-                src={getImageSrc("/IMG-20240805-WA0015.jpg")}
-                alt="Descripcion"
+                src={getImageSrc("/madrid_championship.jpg")}
+                alt="Atletas participando en competencia de crosstraining, levantando pesas sobre sus cabezas en un estadio."
                 fill
                 className="object-cover rounded-xl"
+                loading="lazy"
               />
           </div>
           <div className="w-full md:w-3/4 lg:w-1/2 h-[300px] md:h-[400px] lg:h-[500px] mx-auto lg:mx-4 relative">
             <Image
-                src={getImageSrc("/IMG-20240805-WA0018.jpg")}
-                alt="Descripcion"
+                src={getImageSrc("/froning_team.jpg")}
+                alt="Equipo de atletas participando en los Crossfit Games"
                 fill
                 className="object-cover rounded-xl"
+                loading="lazy"
               />
           </div>
         </div>
@@ -120,15 +123,14 @@ export default function Home() {
           Nos perderemos en sus aguas cristalinas y sus playas de arena blanca. Esta isla que pertenece a Bali es la protagonista de la playa
           más famosa de Indonesia: <strong>Kelingking Beach.</strong>
         </p>
-        <div className="w-4/5 lg:w-1/2 h-[200px] lg:h-[600px] relative mt-8">
-          {/* <div className="w-full h-full max-w-full max-h-full aspect-w-16 aspect-h-9"> */}
+        <div className="w-4/5 lg:w-1/2 h-[200px] md:h-[400px] lg:h-[600px] relative mt-8">
             <Image
-              src={getImageSrc("/kelingking-beach-sunset-nusa-penida-island-bali-indonesia.jpg")}
-              alt="Descripcion"
+              src={getImageSrc("/kelingking_beach_nusa_penida.jpg")}
+              alt="Kelingking Beach en Nusa Penida, Bali, con su icónica formación rocosa rodeada de aguas azules y arena blanca al atardecer."
               fill
               className="object-cover rounded-xl"
+              loading="lazy"
             />
-          {/* </div> */}
         </div>
       </div>
 
@@ -146,12 +148,13 @@ export default function Home() {
           Prepárate para descubrir la gran variedad de fauna marina que se extiende en Nusa Penida y, con un poquito de suerte,
           ver animales tan alucinantes como mantarrayas.
         </p>
-        <div className="w-4/5 lg:w-1/2 h-[200px] lg:h-[600px] relative mt-8">
+        <div className="w-4/5 lg:w-1/2 h-[200px] md:h-[400px] lg:h-[600px] relative mt-8">
           <Image
-            src={getImageSrc("/aquarium of the oacific!!!.jpg")}
-            alt="Descripcion"
+            src={getImageSrc("/aquarium_of_the_pacific.jpg")}
+            alt="Mantarraya nadando entre peces de colores en un acuario con un fondo de corales."
             fill
             className="object-cover object-left rounded-xl"
+            loading="lazy"
           />
         </div>
       </div>
@@ -169,12 +172,13 @@ export default function Home() {
         <p className="w-1/2 text-justify lg:text-center text-base md:text-xl">
           Te quedarás sin palabras con lo impresionante que son las cascadas en Bali y la fuerza con la que desciende el agua no te dejará indiferente.
         </p>
-        <div className="w-4/5 lg:w-1/2 h-[200px] lg:h-[600px] relative mt-8">
+        <div className="w-4/5 lg:w-1/2 h-[200px] md:h-[400px] lg:h-[600px] relative mt-8">
           <Image
             src={getImageSrc("/nungnun_waterfall.jpg")}
-            alt="Descripcion"
+            alt="Cascada Nungnung cayendo desde lo alto de un acantilado rodeado de densa vegetación tropical en Bali."
             fill
             className="object-cover object-bottom w-full h-full rounded-xl"
+            loading="lazy"
           />
         </div>
       </div>
@@ -193,12 +197,13 @@ export default function Home() {
           Vive una experiencia única amaneciendo a 1717 metros de altura, en el volcán activo Batur. Además de las increíbles vistas de toda la isla,
           podrás ver el pico más alto de Bali, el volcán Agung, con 3.142 metros sobre el nivel del mar.
         </p>
-        <div className="w-4/5 lg:w-1/2 h-[200px] lg:h-[600px] relative mt-8">
+        <div className="w-4/5 lg:w-1/2 h-[200px] md:h-[400px] lg:h-[600px] relative mt-8">
           <Image
-            src={getImageSrc("/Mt_ Batur Sunrise Hike.jpg")}
-            alt="Descripcion"
+            src={getImageSrc("/mt_batur_sunrise_hike.jpg")}
+            alt="Amanecer detrás del Monte Batur, un volcán activo en Bali, con un cielo iluminado por tonos naranjas y rosados y nubes bajas cubriendo el paisaje"
             fill
             className="object-cover rounded-xl"
+            loading="lazy"
           />
         </div>
       </div>
@@ -217,12 +222,13 @@ export default function Home() {
           Uno de los paisajes característicos de Bali son sus enormes extensiones de campos de arroz, pintando de verde los senderos que iremos recorriendo
           a lo largo del viaje.
         </p>
-        <div className="w-4/5 lg:w-1/2 h-[200px] lg:h-[600px] relative mt-8">
+        <div className="w-4/5 lg:w-1/2 h-[200px] md:h-[400px] lg:h-[600px] relative mt-8">
           <Image
-            src={getImageSrc("/Tegalalang Rice Terrace.jpg")}
-            alt="Descripcion"
+            src={getImageSrc("/tegalalang_rice_terrace.jpg")}
+            alt="Terrazas de arroz verdes en Tegalalang, Bali, con palmeras y un cielo parcialmente nublado."
             fill
             className="object-cover rounded-xl"
+            loading="lazy"
           />
         </div>
       </div>
@@ -241,12 +247,13 @@ export default function Home() {
           El lugar de Bali por excelencia para hacer inmersiones por su variedad de fauna marina. Nuestros instructores nos guiarán 
           para descubrir todos los rincones que esconden las playas de Amed.
         </p>
-        <div className="w-4/5 lg:w-1/2 h-[200px] lg:h-[600px] relative mt-8">
+        <div className="w-4/5 lg:w-1/2 h-[200px] md:h-[400px] lg:h-[600px] relative mt-8">
           <Image
-            src={getImageSrc("/Scuba diving Bali Nusa Lembongan.jpg")}
-            alt="Descripcion"
+            src={getImageSrc("/scuba_diving_bali_nusa_lembongan.jpg")}
+            alt="Buzo explorando el fondo marino en Nusa Lembongan, Bali, rodeado de peces coloridos y corales."
             fill
             className="object-cover rounded-xl"
+            loading="lazy"
           />
         </div>
       </div>
@@ -267,12 +274,13 @@ export default function Home() {
         <p className="w-1/2 text-justify lg:text-center text-base md:text-xl">
           Disfrutar entrenando y compartiendo este deporte con nuestra familia viajera.
         </p>
-        <div className="w-4/5 lg:w-1/2 h-[200px] lg:h-[600px] relative mt-8">
+        <div className="w-4/5 lg:w-1/2 h-[200px] md:h-[400px] lg:h-[600px] relative mt-8">
           <Image
-            src={getImageSrc("/Tia Clair Toomey.jpg")}
-            alt="Descripcion"
+            src={getImageSrc("/tia_clair.jpg")}
+            alt="Tia Clair Toomey haciendo un levantamiento de barra por encima de su cabeza."
             fill
             className="object-cover rounded-xl"
+            loading="lazy"
           />
         </div>
       </div>
@@ -309,21 +317,6 @@ export default function Home() {
           </div>
         </AccordionItem>
       </Accordion>
-
-      {/* <div className="w-full flex flex-col lg:flex-row items-center justify-center mt-12">
-        <div className="w-full text-center p-6">
-          <div className="my-4 mx-auto w-full border-t-2 border-t2fPrimary border-dashed"></div>
-          <p className="lg:text-3xl text-t2fPrimary text-center">Si has llegado hasta aquí es porque te has
-            sentido identificado con nuestro <span className="text-t2fSecondary">POR QUÉ</span>. 
-            <br />
-            Así que vamos con el <span className="text-t2fSecondary">QUÉ Y CÓMO</span> .
-          </p>
-          <h2 className="uppercase text-2xl md:text-3xl text-t2fSecondary font-extrabold text-center mt-8 p-4 bg-t2fPrimary max-w-md mx-auto rounded-lg">
-            Del 2 al 15 de diciembre descubriendo bali
-          </h2>
-          <div className="my-4 mx-auto w-full border-t-2 border-t2fPrimary border-dashed"></div>
-        </div>
-      </div> */}
 
       <div className="w-full flex flex-col lg:flex-row items-center justify-center mt-12">
         <div className="w-full text-center p-6">
@@ -386,6 +379,7 @@ export default function Home() {
           href="https://www.ejemplo.com"
           target="_blank"
           rel="noopener noreferrer"
+          aria-label="Formulario para unirse a la familia T2F"
           className="bg-t2fSecondary text-white text-xl font-bold py-3 px-6 rounded-lg shadow-lg hover:bg-t2fPrimary transition duration-300 inline-block"
         >
           ¡Únete ya a la familia T2F!
@@ -396,7 +390,7 @@ export default function Home() {
         <div className="w-full mx-auto flex flex-col items-center justify-between">
 
           <div className="w-full flex flex-col items-center justify-center">
-            <SvgLogo width={200} height={200} className="object-contain w-1/2 drop-shadow-[0_0_0.6rem_#000000ff]"  />
+            <SvgLogo width={200} height={200} className="object-contain w-2/5 drop-shadow-[0_0_0.6rem_#000000ff]"  />
             <p className="text-center md:text-left text-sm md:text-base">
               Uniendo la pasión por viajar y el crosstraining.
             </p>
@@ -406,7 +400,7 @@ export default function Home() {
             <div className="w-1/2 flex flex-col items-center justify-center mb-8 md:mb-0">
               <h3 className="font-bold text-lg mb-4">Síguenos</h3>
               <div className="flex space-x-6">
-                <a href="https://www.instagram.com/traveltofeel_" target="_blank" rel="noopener noreferrer">
+                <a href="https://www.instagram.com/traveltofeel_" aria-label="Visitar nuestro perfil de Instagram" target="_blank" rel="noopener noreferrer">
                   <InstagramIcon className="hover:text-white transition duration-500" fontSize="large" />
                 </a>
               </div>
@@ -415,7 +409,7 @@ export default function Home() {
             <div className="w-1/2 flex flex-col items-center justify-center">
               <h3 className="font-bold text-lg mb-4">Contáctanos</h3>
               <p className="text-sm md:text-base">
-                <a href="mailto:contacto@traveltofeel.com" className="underline hover:text-white transition duration-500">
+                <a href="mailto:contacto@traveltofeel.com" aria-label="Enviar un correo a contacto@traveltofeel.com" className="underline hover:text-white transition duration-500">
                   contacto@traveltofeel.com
                 </a>
               </p>
@@ -428,5 +422,5 @@ export default function Home() {
         </div>
       </footer>
     </main>
-  );
+  )
 }
