@@ -24,7 +24,7 @@ export default function Home() {
           <SvgLogo width={300} height={300} className="object-contain w-full"/>
         </div>
 
-        <div className="uppercase absolute inset-0 flex flex-col items-center justify-center mt-10">
+        <div className="uppercase absolute inset-0 flex flex-col items-center justify-center mt-10 lg:mt-0">
           <br></br>
           <h1 className="md:px-5 text-t2fPrimary text-center text-2xl md:text-3xl lg:text-4xl font-bold drop-shadow-[0_0_0.6rem_#000000ff]">
             Bali y Crosstraining en un sólo viaje.</h1>
