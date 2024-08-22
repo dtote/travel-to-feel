@@ -321,7 +321,7 @@ export default function Home() {
       <div className="w-full flex flex-col lg:flex-row items-center justify-center mt-12">
         <div className="w-full text-center p-6">
           <div className="my-4 mx-auto w-full border-t-2 border-t2fPrimary border-dashed"></div>
-          <p className="md:text-2xl lg:text-3xl text-t2fPrimary font-bold text-center mt-8">
+          <p className="w-full md:w-3/4 mx-auto md:text-2xl lg:text-3xl text-t2fPrimary font-bold text-center mt-8">
             Ya te habrás dado cuenta que este NO es el típico pack de viaje en masa que no tiene en cuenta tus gustos ni intereses, mucho menos aún que incluya Crosstraining en el itinerario.
           </p>
           <div className="flex justify-center items-center my-4">
@@ -330,7 +330,7 @@ export default function Home() {
             <span className="inline-block h-1 w-16 bg-t2fPrimary"></span>
           </div>
           <h2 className="text-2xl text-t2fSecondary font-bold text-center md:text-4xl">NUESTRA FILOSOFÍA DE VIAJE ES CLARA</h2>
-          <h3 className="text-xl md:text-3xl text-t2fPrimary font-bold text-center mt-8">
+          <h3 className="w-full md:w-3/4 mx-auto text-xl md:text-3xl text-t2fPrimary font-bold text-center mt-8">
             Hacer que nuestros viajeros vivan la experiencia de sus sueños con personas exhaustivamente
             seleccionadas para formar el mejor grupo y con ello, <span className="text-t2fSecondary"> la mejor familia crosstraveler</span>.
           </h3>
