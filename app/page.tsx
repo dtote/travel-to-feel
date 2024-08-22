@@ -125,7 +125,7 @@ export default function Home() {
         </p>
         <div className="w-4/5 lg:w-1/2 h-[200px] md:h-[400px] lg:h-[600px] relative mt-8">
             <Image
-              src={getImageSrc("/keling.jpg")}
+              src={getImageSrc("/kelingking_beach_nusa_penida.jpg")}
               alt="Kelingking Beach en Nusa Penida, Bali, con su icónica formación rocosa rodeada de aguas azules y arena blanca al atardecer."
               fill
               className="object-cover rounded-xl"
