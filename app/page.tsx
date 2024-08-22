@@ -123,7 +123,7 @@ export default function Home() {
           Nos perderemos en sus aguas cristalinas y sus playas de arena blanca. Esta isla que pertenece a Bali es la protagonista de la playa
           más famosa de Indonesia: <strong>Kelingking Beach.</strong>
         </p>
-        <div className="w-4/5 sm:w-1/2 h-[30vh] sm:h-[60vh] lg:h-[50vh] relative mt-8">
+        <div className="w-4/5 sm:w-1/2 md:w-[50vw] lg:w-[40vw] h-[30vh] sm:h-[60vh] md:h-[65vh] lg:h-[60vh] relative mt-8">
             <Image
               src={getImageSrc("/kelingking_beach_nusa_penida.jpg")}
               alt="Kelingking Beach en Nusa Penida, Bali, con su icónica formación rocosa rodeada de aguas azules y arena blanca al atardecer."
@@ -148,7 +148,7 @@ export default function Home() {
           Prepárate para descubrir la gran variedad de fauna marina que se extiende en Nusa Penida y, con un poquito de suerte,
           ver animales tan alucinantes como mantarrayas.
         </p>
-        <div className="w-4/5 sm:w-1/2 h-[30vh] sm:h-[60vh] lg:h-[50vh] relative mt-8">
+        <div className="w-4/5 sm:w-1/2 md:w-[50vw] lg:w-[40vw] h-[30vh] sm:h-[60vh] md:h-[65vh] lg:h-[60vh] relative mt-8">
           <Image
             src={getImageSrc("/aquarium_of_the_pacific.jpg")}
             alt="Mantarraya nadando entre peces de colores en un acuario con un fondo de corales."
@@ -172,7 +172,7 @@ export default function Home() {
         <p className="w-[80vw] sm:w-[70vw] md:w-[60vw] lg:w-[50vw] text-justify lg:text-center text-base md:text-xl">
           Te quedarás sin palabras con lo impresionante que son las cascadas en Bali y la fuerza con la que desciende el agua no te dejará indiferente.
         </p>
-        <div className="w-4/5 sm:w-1/2 h-[30vh] sm:h-[60vh] lg:h-[50vh] relative mt-8">
+        <div className="w-4/5 sm:w-1/2 md:w-[50vw] lg:w-[40vw] h-[30vh] sm:h-[60vh] md:h-[65vh] lg:h-[60vh] relative mt-8">
           <Image
             src={getImageSrc("/nungnun_waterfall.jpg")}
             alt="Cascada Nungnung cayendo desde lo alto de un acantilado rodeado de densa vegetación tropical en Bali."
@@ -197,7 +197,7 @@ export default function Home() {
           Vive una experiencia única amaneciendo a 1717 metros de altura, en el volcán activo Batur. Además de las increíbles vistas de toda la isla,
           podrás ver el pico más alto de Bali, el volcán Agung, con 3.142 metros sobre el nivel del mar.
         </p>
-        <div className="w-4/5 sm:w-1/2 h-[30vh] sm:h-[60vh] md:h-[50vh] lg:h-[70vh] relative mt-8">
+        <div className="w-4/5 sm:w-1/2 md:w-[50vw] lg:w-[40vw] h-[30vh] sm:h-[60vh] md:h-[65vh] lg:h-[60vh] relative mt-8">
           <Image
             src={getImageSrc("/mt_batur_sunrise_hike.jpg")}
             alt="Amanecer detrás del Monte Batur, un volcán activo en Bali, con un cielo iluminado por tonos naranjas y rosados y nubes bajas cubriendo el paisaje"
@@ -222,7 +222,7 @@ export default function Home() {
           Uno de los paisajes característicos de Bali son sus enormes extensiones de campos de arroz, pintando de verde los senderos que iremos recorriendo
           a lo largo del viaje.
         </p>
-        <div className="w-4/5 sm:w-1/2 h-[30vh] sm:h-[60vh] lg:h-[50vh] relative mt-8">
+        <div className="w-4/5 sm:w-1/2 md:w-[50vw] lg:w-[40vw] h-[30vh] sm:h-[60vh] md:h-[65vh] lg:h-[60vh] relative mt-8">
           <Image
             src={getImageSrc("/tegalalang_rice_terrace.jpg")}
             alt="Terrazas de arroz verdes en Tegalalang, Bali, con palmeras y un cielo parcialmente nublado."
@@ -247,7 +247,7 @@ export default function Home() {
           El lugar de Bali por excelencia para hacer inmersiones por su variedad de fauna marina. Nuestros instructores nos guiarán 
           para descubrir todos los rincones que esconden las playas de Amed.
         </p>
-        <div className="w-4/5 sm:w-1/2 h-[30vh] sm:h-[60vh] lg:h-[50vh] relative mt-8">
+        <div className="w-4/5 sm:w-1/2 md:w-[50vw] lg:w-[40vw] h-[30vh] sm:h-[60vh] md:h-[65vh] lg:h-[60vh] relative mt-8">
           <Image
             src={getImageSrc("/scuba_diving_bali_nusa_lembongan.jpg")}
             alt="Buzo explorando el fondo marino en Nusa Lembongan, Bali, rodeado de peces coloridos y corales."
@@ -274,7 +274,7 @@ export default function Home() {
         <p className="w-[80vw] sm:w-[70vw] md:w-[60vw] lg:w-[50vw] text-justify lg:text-center text-base md:text-xl">
           Disfrutar entrenando y compartiendo este deporte con nuestra familia viajera.
         </p>
-        <div className="w-4/5 sm:w-1/2 h-[30vh] sm:h-[60vh] lg:h-[50vh] relative mt-8">
+        <div className="w-4/5 sm:w-1/2 md:w-[50vw] lg:w-[40vw] h-[30vh] sm:h-[60vh] md:h-[65vh] lg:h-[60vh] relative mt-8">
           <Image
             src={getImageSrc("/tia_clair.jpg")}
             alt="Tia Clair Toomey haciendo un levantamiento de barra por encima de su cabeza."
