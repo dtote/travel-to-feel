@@ -376,7 +376,7 @@ export default function Home() {
       </div>
       <div className="w-full flex justify-center mt-4">
         <a
-          href="https://www.ejemplo.com"
+          href="https://forms.gle/tG4TjEKhx5MpMwAa9"
           target="_blank"
           rel="noopener noreferrer"
           aria-label="Formulario para unirse a la familia T2F"
@@ -390,7 +390,7 @@ export default function Home() {
         <div className="w-full mx-auto flex flex-col items-center justify-between">
 
           <div className="w-full flex flex-col items-center justify-center">
-            <SvgLogo width={200} height={200} className="object-contain w-2/5 drop-shadow-[0_0_0.6rem_#000000ff]"  />
+            <SvgLogo width={200} height={200} className="object-contain scale-110 w-full drop-shadow-[0_0_0.6rem_#000000ff]"  />
             <p className="text-center md:text-left text-sm md:text-base">
               Uniendo la pasión por viajar y el crosstraining.
             </p>
@@ -409,8 +409,8 @@ export default function Home() {
             <div className="w-1/2 flex flex-col items-center justify-center">
               <h3 className="font-bold text-lg mb-4">Contáctanos</h3>
               <p className="text-sm md:text-base">
-                <a href="mailto:contacto@traveltofeel.com" aria-label="Enviar un correo a contacto@traveltofeel.com" className="underline hover:text-white transition duration-500">
-                  contacto@traveltofeel.com
+                <a href="mailto:traveltofeelcompany@gmail.com" aria-label="Enviar un correo a traveltofeelcompany@gmail.com" className="underline hover:text-white transition duration-500">
+                  traveltofeelcompany@gmail.com
                 </a>
               </p>
             </div>
