@@ -321,7 +321,7 @@ export default function Home() {
               </li>
               <li><strong>Seguro médico:</strong> 40-45€ dependiendo del seguro que cojas.</li>
               <li><strong>Visado:</strong> 30€.</li>
-              <li><strong>Otros gastos durante la estancia:</strong> el resto de almuerzos y cenas, los desplazamientos cortos que haremos en moto al gimnasio y alredores del alojamiento.
+              <li><strong>Otros gastos durante la estancia:</strong> el resto de almuerzos y cenas, los desplazamientos cortos que haremos en moto al gimnasio y alrededores del alojamiento.
                 La estimación no supera los 200€, pero esta cantidad depende de cada persona.
               </li>
             </ul>
@@ -373,7 +373,7 @@ export default function Home() {
                  daremos más información sobre el viaje y nos aseguraremos de que Travel To Feel es la decisión correcta para tu viaje de ensueño.
               </li>
               <li>Si ambos estamos de acuerdo en que sí es para ti el viaje, solo quedará reservar la plaza y listo ¡Bienvenido a la familia!.</li>
-              <li>Cuando se complete el grupo mínimo, haremos un grupo de Whatsapp para dar toda la información necesaria, hacer videollamadas e irnos conociendo y tengan apoyo 24h desde ya para cualquier duda que tengan.
+              <li>Cuando se complete el grupo mínimo, haremos un grupo de Whatsapp para dar toda la información necesaria, hacer videollamadas e irnos conociendo y tengan apoyo 24h para cualquier duda que tengan.
               </li>
             </ol>
           </div>
