@@ -40,7 +40,7 @@ export default function Home() {
               backdropFilter: "blur(1px)",
             }}
           >
-          <h2 className="max-w-[95vw] font-custom text-t2fPrimary text-center font-bold text-md md:text-2xl lg:text-3xl">
+          <h2 className="font-custom text-t2fPrimary text-center font-bold text-md md:text-2xl lg:text-3xl">
             Creada para personas que comparten la pasión de viajar y entrenar crosstraining en comunidad
           </h2>
         </div>
