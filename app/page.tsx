@@ -271,7 +271,7 @@ export default function Home() {
 
       {/* Y muchas actividades más */}
       <div className="w-full flex flex-col items-center justify-center mt-8">
-        <div className="w-full text-center uppercase lg:w-1/2">
+        <div className="w-full text-center uppercase lg:w-3/4">
           <h2 className="font-custom text-xl text-t2fPrimary font-bold text-center md:text-4xl">Y muchas actividades más que complementaremos con 
             <br />
             <span className="text-t2fSecondary"> nuestra gran pasión</span>
