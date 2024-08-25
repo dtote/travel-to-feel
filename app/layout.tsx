@@ -1,9 +1,8 @@
 import type { Metadata } from "next";
 import { Inter } from "next/font/google";
 import "./globals.css";
-import Head from "next/head";
 import { GoogleAnalytics } from '@next/third-parties/google'
-
+import type { Viewport } from 'next'
 
 const inter = Inter({ subsets: ["latin"] });
 
@@ -17,9 +16,16 @@ export const metadata: Metadata = {
   applicationName: "Travel To Feel",
   authors: [{ name: "Travel To Feel", url: siteUrl }],
   keywords: ["crosstraining", "crossfit", "viajes", "grupo", "Bali", "comunidad", "entrenar", "exóticos", "destinos"],
-  viewport: "width=device-width, initial-scale=1.0",
   robots: "index, follow",
-  icons: { icon: "/favicon.png" },
+  icons: {
+    icon: [
+      { url: "/icon.ico", sizes: "any" }, // .ico para compatibilidad máxima
+      // { url: "/favicon.png", type: "image/png" }, // PNG básico
+      // { url: "/apple-touch-icon.png", sizes: "180x180", type: "image/png" }, // Para dispositivos Apple
+      // { url: "/favicon-32x32.png", sizes: "32x32", type: "image/png" },
+      // { url: "/favicon-16x16.png", sizes: "16x16", type: "image/png" },
+    ],
+   },
   openGraph: {
     type: "website",
     url: siteUrl,
@@ -42,6 +48,13 @@ export const metadata: Metadata = {
     images: [ogImageUrl]
   }
 };
+
+export const viewport: Viewport = {
+  width: 'device-width',
+  initialScale: 1,
+  maximumScale: 1,
+  userScalable: false,
+}
 
 export default function RootLayout({
   children,
