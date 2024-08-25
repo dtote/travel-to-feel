@@ -16,15 +16,12 @@
   }
 }
 
-/* body {
-  color: rgb(var(--foreground-rgb));
-  background: linear-gradient(
-      to bottom,
-      transparent,
-      rgb(var(--background-end-rgb))
-    )
-    rgb(var(--background-start-rgb));
-} */
+@font-face {
+  font-family: 'LibreBaskerville';
+  src: url('/fonts/LibreBaskerville-Regular.ttf') format('opentype');
+  font-weight: normal;
+  font-style: normal;
+}
 
 html {
   scroll-behavior: smooth;

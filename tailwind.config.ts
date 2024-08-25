@@ -26,6 +26,9 @@ const config: Config = {
         lg: '0 8px 16px var(--tw-shadow-color)',
         custom: '0px 5px 2px var(--tw-shadow-color)'
       },
+      fontFamily: {
+        custom: ['LibreBaskerville', 'sans-serif'],
+      },
     },
   },
   plugins: [

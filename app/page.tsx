@@ -20,29 +20,40 @@ export default function Home() {
           priority
           quality={100}
         />
+
         <div className="flex justify-center items-center w-full h-2/5 absolute top-2 drop-shadow-[0_0_0.6rem_#000000ff]">
           <SvgLogo width={300} height={300} className="object-contain w-full"/>
         </div>
 
         <div className="uppercase absolute inset-0 flex flex-col items-center justify-center mt-10 lg:mt-0">
           <br></br>
-          <h1 className="md:px-5 text-t2fPrimary text-center text-2xl md:text-3xl lg:text-4xl font-bold drop-shadow-[0_0_0.6rem_#000000ff]">
+          <h1 className="font-custom px-2 md:px-5 text-t2fPrimary text-center text-2xl md:text-3xl lg:text-4xl font-bold drop-shadow-[0_0_0.3rem_#00000070]">
             Bali y Crosstraining en un sólo viaje.</h1>
+
           <br></br>
           <br></br>
           <br></br>
-          <h1 className="md:px-4 text-t2fPrimary text-center text-xl md:text-2xl lg:text-3xl font-bold drop-shadow-[0_0_0.6rem_#000000cc]">
-            Creada para personas que comparten la pasión de viajar y entrenar crosstraining en comunidad</h1>
+          <div
+            className="relative p-4 rounded-lg"
+            style={{
+              background: "linear-gradient(180deg, rgba(255, 255, 255, 0) 0%, rgba(255, 255, 255, 0.15) 50%, rgba(255, 255, 255, 0) 100%)",
+              backdropFilter: "blur(1px)",
+            }}
+          >
+          <h2 className="font-custom md:px-4 text-t2fPrimary text-center font-bold text-xl md:text-2xl lg:text-3xl">
+            Creada para personas que comparten la pasión de viajar y entrenar crosstraining en comunidad
+          </h2>
         </div>
-        <ScrollLink targetId="second-section" className="animate-bounce absolute bottom-10 md:bottom-5 text-t2fPrimary text-5xl md:text-6xl lg:text-7xl drop-shadow-[0_0_0.6rem_#ffffffff]">
+        </div>
+        <ScrollLink targetId="second-section" className="animate-bounce absolute bottom-10 md:bottom-5 text-t2fPrimary text-5xl md:text-6xl lg:text-7xl">
           <span className="sr-only">Desplazarse hacia abajo a la siguiente sección</span>
           <KeyboardArrowDown fontSize="inherit"/>
         </ScrollLink>
       </div>
 
       <div id="second-section" className="w-full min-h-screen flex flex-col items-center justify-center mt-12">
-        <div className="w-full text-center uppercase lg:w-1/2 p-8">
-          <h2 className="text-2xl text-t2fSecondary font-bold text-left md:text-center md:text-4xl">¿Por qué <span className="text-t2fPrimary">TRAVEL TO FEEL?</span></h2>
+        <div className="w-full text-center uppercase lg:w-3/4 p-8">
+          <h2 className="font-custom text-xl text-t2fSecondary font-bold text-left md:text-center md:text-4xl">¿Por qué <span className="text-t2fPrimary">TRAVEL TO FEEL?</span></h2>
         </div>
         <p className="w-3/4 text-justify text-base md:text-xl">
           Travel to Feel nace de dos caminos que se unen. Por un lado, el <strong>Crosstraining</strong> y todo lo que ello conlleva.
@@ -64,8 +75,8 @@ export default function Home() {
       </div>
 
       <div className="w-full min-h-screen flex flex-col items-center justify-center mt-12">
-        <div className="w-full text-center uppercase lg:w-1/2 p-8">
-          <h2 className="text-2xl md:text-4xl text-t2fSecondary font-bold text-left md:text-center">¿Por qué en <span className="text-t2fPrimary">grupos reducidos y filtrados?</span></h2>
+        <div className="w-full text-center uppercase lg:w-3/4 p-8">
+          <h2 className="font-custom text-xl md:text-4xl text-t2fSecondary font-bold text-left md:text-center">¿Por qué en <span className="text-t2fPrimary">grupos reducidos y filtrados?</span></h2>
         </div>
         <p className="w-3/4 text-justify text-base md:text-xl">
           Sabemos que la conexión y la afinidad son dos aspectos imprescindibles para que la experiencia sea perfecta, y por ello, escogemos 
@@ -102,7 +113,7 @@ export default function Home() {
             <br />
             Así que vamos con el <span className="text-t2fSecondary">QUÉ Y CÓMO</span> .
           </p>
-          <h2 className="uppercase text-2xl md:text-3xl text-t2fSecondary font-extrabold text-center mt-8 p-4 bg-t2fPrimary max-w-md mx-auto rounded-lg">
+          <h2 className="font-custom uppercase text-xl md:text-3xl text-t2fSecondary font-extrabold text-center mt-8 p-4 bg-t2fPrimary md:max-w-lg mx-auto rounded-lg">
             Del 2 al 15 de diciembre descubriendo bali
           </h2>
           <div className="my-4 mx-auto w-full border-t-2 border-t2fPrimary border-dashed"></div>
@@ -111,8 +122,8 @@ export default function Home() {
 
       {/* NUSA PENIDA */}
       <div className="w-full flex flex-col items-center justify-center mt-8">
-        <div className="w-full text-center uppercase lg:w-1/2">
-          <h2 className="text-2xl text-t2fPrimary font-bold text-center md:text-4xl">NUSA PENIDA</h2>
+        <div className="w-full text-center uppercase lg:w-3/4">
+          <h2 className="font-custom text-2xl text-t2fPrimary font-bold text-center md:text-4xl">NUSA PENIDA</h2>
           <div className="flex justify-center items-center my-4">
             <span className="inline-block h-1 w-16 bg-t2fPrimary"></span>
             <span className="mx-2 text-t2fSecondary">✦✦✦</span>
@@ -136,8 +147,8 @@ export default function Home() {
 
       {/* SNORKEL */}
       <div className="w-full flex flex-col items-center justify-center mt-8">
-        <div className="w-full text-center uppercase lg:w-1/2">
-          <h2 className="text-2xl text-t2fPrimary font-bold text-center md:text-4xl">SNORKEL</h2>
+        <div className="w-full text-center uppercase lg:w-3/4">
+          <h2 className="font-custom text-2xl text-t2fPrimary font-bold text-center md:text-4xl">SNORKEL</h2>
           <div className="flex justify-center items-center my-4">
             <span className="inline-block h-1 w-16 bg-t2fPrimary"></span>
             <span className="mx-2 text-t2fSecondary">✦✦✦</span>
@@ -161,8 +172,8 @@ export default function Home() {
 
       {/* CASCADAS */}
       <div className="w-full flex flex-col items-center justify-center mt-8">
-        <div className="w-full text-center uppercase lg:w-1/2">
-          <h2 className="text-2xl text-t2fPrimary font-bold text-center md:text-4xl">CASCADAS</h2>
+        <div className="w-full text-center uppercase lg:w-3/4">
+          <h2 className="font-custom text-2xl text-t2fPrimary font-bold text-center md:text-4xl">CASCADAS</h2>
           <div className="flex justify-center items-center my-4">
             <span className="inline-block h-1 w-16 bg-t2fPrimary"></span>
             <span className="mx-2 text-t2fSecondary">✦✦✦</span>
@@ -185,8 +196,8 @@ export default function Home() {
 
       {/* AMANECER EN EL MONTE BATUR */}
       <div className="w-full flex flex-col items-center justify-center mt-8">
-        <div className="w-full text-center uppercase lg:w-1/2">
-          <h2 className="text-2xl text-t2fPrimary font-bold text-center md:text-4xl">AMANECER EN EL MONTE BATUR</h2>
+        <div className="w-full text-center uppercase lg:w-3/4">
+          <h2 className="font-custom text-2xl text-t2fPrimary font-bold text-center md:text-4xl">AMANECER EN EL MONTE BATUR</h2>
           <div className="flex justify-center items-center my-4">
             <span className="inline-block h-1 w-16 bg-t2fPrimary"></span>
             <span className="mx-2 text-t2fSecondary">✦✦✦</span>
@@ -210,8 +221,8 @@ export default function Home() {
 
       {/* KILÓMETROS INFINITOS DE ARROZALES */}
       <div className="w-full flex flex-col items-center justify-center mt-8">
-        <div className="w-full text-center uppercase lg:w-1/2">
-          <h2 className="text-2xl text-t2fPrimary font-bold text-center md:text-4xl">KILÓMETROS INFINITOS DE ARROZALES</h2>
+        <div className="w-full text-center uppercase lg:w-3/4">
+          <h2 className="font-custom text-2xl text-t2fPrimary font-bold text-center md:text-4xl">KILÓMETROS INFINITOS DE ARROZALES</h2>
           <div className="flex justify-center items-center my-4">
             <span className="inline-block h-1 w-16 bg-t2fPrimary"></span>
             <span className="mx-2 text-t2fSecondary">✦✦✦</span>
@@ -235,8 +246,8 @@ export default function Home() {
 
       {/* BAUTISMO DE BUCEO EN AMED */}
       <div className="w-full flex flex-col items-center justify-center mt-8">
-        <div className="w-full text-center uppercase lg:w-1/2">
-          <h2 className="text-2xl text-t2fPrimary font-bold text-center md:text-4xl">BAUTISMO DE BUCEO EN AMED</h2>
+        <div className="w-full text-center uppercase lg:w-3/4">
+          <h2 className="font-custom text-2xl text-t2fPrimary font-bold text-center md:text-4xl">BAUTISMO DE BUCEO EN AMED</h2>
           <div className="flex justify-center items-center my-4">
             <span className="inline-block h-1 w-16 bg-t2fPrimary"></span>
             <span className="mx-2 text-t2fSecondary">✦✦✦</span>
@@ -261,7 +272,7 @@ export default function Home() {
       {/* Y muchas actividades más */}
       <div className="w-full flex flex-col items-center justify-center mt-8">
         <div className="w-full text-center uppercase lg:w-1/2">
-          <h2 className="text-2xl text-t2fPrimary font-bold text-center md:text-4xl">Y muchas actividades más que complementaremos con 
+          <h2 className="font-custom text-xl text-t2fPrimary font-bold text-center md:text-4xl">Y muchas actividades más que complementaremos con 
             <br />
             <span className="text-t2fSecondary"> nuestra gran pasión</span>
           </h2>
@@ -321,16 +332,16 @@ export default function Home() {
       <div className="w-full flex flex-col lg:flex-row items-center justify-center mt-12">
         <div className="w-full text-center p-6">
           <div className="my-4 mx-auto w-full border-t-2 border-t2fPrimary border-dashed"></div>
-          <p className="w-full md:w-3/4 mx-auto md:text-2xl lg:text-3xl text-t2fPrimary font-bold text-center mt-8">
-            Ya te habrás dado cuenta que este NO es el típico pack de viaje en masa que no tiene en cuenta tus gustos ni intereses, mucho menos aún que incluya Crosstraining en el itinerario.
+          <p className=" w-full md:w-3/4 mx-auto md:text-2xl lg:text-3xl text-t2fPrimary text-center mt-8">
+            Ya te habrás dado cuenta que este <strong>NO</strong> es el típico pack de viaje en masa que no tiene en cuenta tus gustos ni intereses, mucho menos aún que incluya Crosstraining en el itinerario.
           </p>
           <div className="flex justify-center items-center my-4">
             <span className="inline-block h-1 w-16 bg-t2fPrimary"></span>
             <span className="mx-2 text-t2fSecondary">✦✦✦</span>
             <span className="inline-block h-1 w-16 bg-t2fPrimary"></span>
           </div>
-          <h2 className="text-2xl text-t2fSecondary font-bold text-center md:text-4xl">NUESTRA FILOSOFÍA DE VIAJE ES CLARA</h2>
-          <h3 className="w-full md:w-3/4 mx-auto text-xl md:text-3xl text-t2fPrimary font-bold text-center mt-8">
+          <h2 className="font-custom text-2xl text-t2fSecondary font-bold text-center md:text-4xl">NUESTRA FILOSOFÍA DE VIAJE ES CLARA</h2>
+          <h3 className="w-full md:w-3/4 mx-auto text-xl md:text-3xl text-t2fPrimary text-center mt-8">
             Hacer que nuestros viajeros vivan la experiencia de sus sueños con personas exhaustivamente
             seleccionadas para formar el mejor grupo y con ello, <span className="text-t2fSecondary"> la mejor familia crosstraveler</span>.
           </h3>
@@ -339,7 +350,7 @@ export default function Home() {
             <span className="mx-2 text-t2fSecondary">✦✦✦</span>
             <span className="inline-block h-1 w-16 bg-t2fPrimary"></span>
           </div>
-          <h3 className="uppercase text-xl md:text-3xl text-t2fSecondary font-bold text-center mt-8 p-4 bg-t2fPrimary max-w-2xl mx-auto rounded-lg">
+          <h3 className="font-custom uppercase text-xl md:text-3xl text-t2fSecondary font-bold text-center mt-8 p-4 bg-t2fPrimary max-w-2xl mx-auto rounded-lg">
             Tu decides. 
             <br />
             Vivirlo o soñarlo solo depende de ti.
@@ -350,10 +361,10 @@ export default function Home() {
 
       <div className="w-full flex flex-col lg:flex-row items-center justify-center">
         <div className="w-5/6 mx-auto bg-t2fSecondary bg-opacity-25 p-4 border-2 border-t2fSecondary rounded-lg shadow-xl">
-          <h2 className="text-2xl text-t2fPrimary font-extrabold text-center md:text-4xl uppercase">
+          <h3 className="font-custom text-2xl text-t2fPrimary font-extrabold text-center md:text-4xl uppercase">
             <span className="text-t2fSecondary">4 Pasos</span> 
             <br />
-            para tener tu plaza</h2>
+            para tener tu plaza</h3>
           <div className="w-full p-8">
             <ol className="list-decimal text-justify text-base md:text-xl space-y-4">
               <li>Completar un sencillo formulario que te dejaremos a continuación para poder conocerte y asegurar que vivas la experiencia con esas personas afines de las que te hablamos anteriormente.
