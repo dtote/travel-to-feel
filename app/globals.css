@@ -25,9 +25,11 @@
 
 html {
   scroll-behavior: smooth;
+  overflow-x: hidden;
 }
 body {
   background: white;
+  overflow-x: hidden;
 }
 
 @layer utilities {
