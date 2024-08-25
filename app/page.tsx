@@ -16,7 +16,7 @@ export default function Home() {
           src={getImageSrc("/sunlight_sea.jpg")}
           alt="Paisaje costero con el sol brillando sobre el mar, creando reflejos de agua."
           fill
-          className="object-cover"
+          className="object-cover w-full h-full"
           priority
           quality={100}
         />
