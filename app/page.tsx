@@ -10,7 +10,7 @@ import SvgLogo from "./components/SvgLogo"
 
 export default function Home() {
   return (
-    <main className="flex min-h-screen flex-col items-center justify-between p-0 m-0">
+    <main className="w-full min-h-screen flex flex-col items-center justify-between p-0 m-0">
       <div className="relative w-full min-h-screen flex flex-col items-center justify-center">
         <Image
           src={getImageSrc("/sunlight_sea.jpg")}
@@ -34,7 +34,7 @@ export default function Home() {
           <br></br>
           <br></br>
           <div
-            className="relative p-4 rounded-lg"
+            className="relative rounded-lg"
             style={{
               background: "linear-gradient(180deg, rgba(255, 255, 255, 0) 0%, rgba(255, 255, 255, 0.15) 50%, rgba(255, 255, 255, 0) 100%)",
               backdropFilter: "blur(1px)",
