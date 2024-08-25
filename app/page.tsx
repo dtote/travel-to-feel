@@ -10,7 +10,7 @@ import SvgLogo from "./components/SvgLogo"
 
 export default function Home() {
   return (
-    <main className="w-full min-h-screen flex flex-col items-center justify-between p-0 m-0">
+    <main className="flex min-h-screen flex-col items-center justify-between p-0 m-0">
       <div className="relative w-full min-h-screen flex flex-col items-center justify-center">
         <Image
           src={getImageSrc("/sunlight_sea.jpg")}
@@ -27,7 +27,7 @@ export default function Home() {
 
         <div className="uppercase absolute inset-0 flex flex-col items-center justify-center mt-10 lg:mt-0">
           <br></br>
-          <h1 className="font-custom md:px-5 text-t2fPrimary text-center text-xl md:text-3xl lg:text-4xl font-bold drop-shadow-[0_0_0.3rem_#00000070]">
+          <h1 className="font-custom px-5 text-t2fPrimary text-center text-xl md:text-3xl lg:text-4xl font-bold drop-shadow-[0_0_0.3rem_#00000070]">
             Bali y Crosstraining en un sólo viaje.</h1>
 
           <br></br>
@@ -40,7 +40,7 @@ export default function Home() {
               backdropFilter: "blur(1px)",
             }}
           >
-          <h2 className="font-custom md:px-4 text-t2fPrimary text-center font-bold text-lg md:text-2xl lg:text-3xl">
+          <h2 className="font-custom px-4 text-t2fPrimary text-center font-bold text-lg md:text-2xl lg:text-3xl">
             Creada para personas que comparten la pasión de viajar y entrenar crosstraining en comunidad
           </h2>
         </div>
