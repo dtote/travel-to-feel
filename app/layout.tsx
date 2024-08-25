@@ -12,7 +12,7 @@ const description = "Descubre la combinación perfecta de viajes y crosstraining
 
 export const metadata: Metadata = {
   title: "Travel To Feel",
-  description,
+  description: description,
   applicationName: "Travel To Feel",
   authors: [{ name: "Travel To Feel", url: siteUrl }],
   keywords: ["crosstraining", "crossfit", "viajes", "grupo", "Bali", "comunidad", "entrenar", "exóticos", "destinos"],
@@ -20,17 +20,17 @@ export const metadata: Metadata = {
   icons: {
     icon: [
       { url: "/icon.ico", sizes: "any" }, // .ico para compatibilidad máxima
-      // { url: "/favicon.png", type: "image/png" }, // PNG básico
-      // { url: "/apple-touch-icon.png", sizes: "180x180", type: "image/png" }, // Para dispositivos Apple
-      // { url: "/favicon-32x32.png", sizes: "32x32", type: "image/png" },
-      // { url: "/favicon-16x16.png", sizes: "16x16", type: "image/png" },
+      { url: "/favicon.png", type: "image/png" }, // PNG básico
+      { url: "/apple-touch-icon.png", sizes: "180x180", type: "image/png" }, // Para dispositivos Apple
+      { url: "/favicon-32x32.png", sizes: "32x32", type: "image/png" },
+      { url: "/favicon-16x16.png", sizes: "16x16", type: "image/png" },
     ],
    },
   openGraph: {
     type: "website",
     url: siteUrl,
     title: "Travel To Feel",
-    description,
+    description: description,
     siteName: "Travel To Feel",
     images: [
       {
@@ -44,7 +44,7 @@ export const metadata: Metadata = {
   twitter: {
     card: "summary_large_image",
     title: "Travel To Feel",
-    description,
+    description: description,
     images: [ogImageUrl]
   }
 };
@@ -66,7 +66,6 @@ export default function RootLayout({
 
     return (
       <html lang="es">
-
         <body className={inter.className}>{children}</body>
         {gaId && <GoogleAnalytics gaId={gaId} />}
       </html>
