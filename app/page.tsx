@@ -27,7 +27,7 @@ export default function Home() {
 
         <div className="uppercase absolute inset-0 flex flex-col items-center justify-center mt-10 lg:mt-0">
           <br></br>
-          <h1 className="font-custom px-2 md:px-5 text-t2fPrimary text-center text-2xl md:text-3xl lg:text-4xl font-bold drop-shadow-[0_0_0.3rem_#00000070]">
+          <h1 className="font-custom mx-2 md:px-5 text-t2fPrimary text-center text-2xl md:text-3xl lg:text-4xl font-bold drop-shadow-[0_0_0.3rem_#00000070]">
             Bali y Crosstraining en un sólo viaje.</h1>
 
           <br></br>
