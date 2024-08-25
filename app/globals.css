@@ -27,7 +27,8 @@ html {
   scroll-behavior: smooth;
 }
 body {
-  background: white
+  background: white;
+  overflow-x: hidden;
 }
 
 @layer utilities {
