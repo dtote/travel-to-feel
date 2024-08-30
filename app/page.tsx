@@ -382,7 +382,7 @@ export default function Home() {
 
       <div className="md:w-5/6 text-center mt-8 p-6">
         <p className="md:text-2xl lg:text-3xl font-medium text-gray-700">
-         Aquí comienza tu viaje, únete a nosotros para rellenar el formulario.
+         Aquí comienza tu viaje, rellena el formulario y únete a nosotros.
         </p>
       </div>
       <div className="w-full flex justify-center mt-4">
@@ -393,7 +393,7 @@ export default function Home() {
           aria-label="Formulario para unirse a la familia T2F"
           className="bg-t2fSecondary text-white text-xl font-bold py-3 px-6 rounded-lg shadow-lg hover:bg-t2fPrimary transition duration-300 inline-block"
         >
-          ¡Únete ya a la familia T2F!
+          Iniciar formulario
         </a>
       </div>
 
