@@ -53,11 +53,11 @@ export default function Home() {
 
       {/* Nuevas fechas */}
       <div id="second-section" className="w-full min-h-screen flex flex-col items-center justify-center mt-12">
-        <div className="w-full text-center uppercase lg:w-3/4 p-8">
+        <div className="w-full text-center uppercase lg:w-3/4 p-6">
           <h2 className="font-custom text-xl text-t2fPrimary font-bold text-center md:text-4xl"><span className="text-t2fSecondary">Próximas Fechas</span> 2025</h2>
         </div>
 
-        <div className="w-full lg:w-3/4 flex flex-col md:flex-row md:flex-wrap justify-center items-center gap-6 mt-8 px-4">
+        <div className="w-full lg:w-3/4 flex flex-col md:flex-row md:flex-wrap justify-center items-center gap-6 mt-2 px-4">
           {/* Card 1: Bali Marzo */}
           <a href="https://forms.gle/tG4TjEKhx5MpMwAa9" target="_blank" rel="noopener noreferrer" className="w-full md:w-1/3 h-[200px] group">
             <div className="relative w-full h-full rounded-lg overflow-hidden shadow-lg cursor-pointer transform transition-transform duration-300 group-hover:scale-105">
