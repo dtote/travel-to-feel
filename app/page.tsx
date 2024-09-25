@@ -51,7 +51,91 @@ export default function Home() {
         </ScrollLink>
       </div>
 
+      {/* Nuevas fechas */}
       <div id="second-section" className="w-full min-h-screen flex flex-col items-center justify-center mt-12">
+        <div className="w-full text-center uppercase lg:w-3/4 p-8">
+          <h2 className="font-custom text-xl text-t2fPrimary font-bold text-center md:text-4xl"><span className="text-t2fSecondary">Próximas Fechas</span> 2025</h2>
+        </div>
+
+        <div className="w-full lg:w-3/4 flex flex-col md:flex-row md:flex-wrap justify-center items-center gap-6 mt-8 px-4">
+          {/* Card 1: Bali Marzo */}
+          <a href="https://forms.gle/tG4TjEKhx5MpMwAa9" target="_blank" rel="noopener noreferrer" className="w-full md:w-1/3 h-[200px] group">
+            <div className="relative w-full h-full rounded-lg overflow-hidden shadow-lg cursor-pointer transform transition-transform duration-300 group-hover:scale-105">
+              <Image
+                src={getImageSrc("/kelingking_beach_nusa_penida.jpg")}
+                alt="Imagen de Kelingking Beach en Nusa Penida, Bali."
+                fill
+                className="object-cover transition-opacity duration-300 group-hover:opacity-80"
+              />
+              <div className="absolute inset-0 bg-black bg-opacity-50 flex items-center justify-center">
+                <h3 className="font-custom text-white text-center text-xl md:text-2xl font-bold">
+                  Bali <br /> 3 - 16 Marzo
+                </h3>
+              </div>
+              <div className="absolute bottom-2 right-2 bg-green-500 text-white text-sm font-semibold px-4 py-2 rounded-md shadow-lg">
+                Plazas disponibles
+              </div>
+            </div>
+          </a>
+
+          {/* Card 2: Bali Junio */}
+          <a href="https://forms.gle/tG4TjEKhx5MpMwAa9" target="_blank" rel="noopener noreferrer" className="w-full md:w-1/3 h-[200px] group">
+            <div className="relative w-full h-full rounded-lg overflow-hidden shadow-lg cursor-pointer transform transition-transform duration-300 group-hover:scale-105">
+              <Image
+                src={getImageSrc("/aquarium_of_the_pacific.jpg")}
+                alt="Imagen representativa de Snorkel en Nusa Penida, Bali."
+                fill
+                className="object-cover transition-opacity duration-300 group-hover:opacity-80"
+              />
+              <div className="absolute inset-0 bg-black bg-opacity-50 flex items-center justify-center">
+                <h3 className="font-custom text-white text-center text-xl md:text-2xl font-bold">
+                  Bali <br /> 2 - 15 Junio
+                </h3>
+              </div>
+              <div className="absolute bottom-2 right-2 bg-green-500 text-white text-sm font-semibold px-4 py-2 rounded-md shadow-lg">
+                Plazas disponibles
+              </div>
+            </div>
+          </a>
+
+          {/* Card 3: Bali Septiembre */}
+          <a href="https://forms.gle/tG4TjEKhx5MpMwAa9" target="_blank" rel="noopener noreferrer" className="w-full md:w-1/3 h-[200px] group">
+            <div className="relative w-full h-full rounded-lg overflow-hidden shadow-lg cursor-pointer transform transition-transform duration-300 group-hover:scale-105">
+              <Image
+                src={getImageSrc("/mt_batur_sunrise_hike.jpg")}
+                alt="Imagen del amanecer en el Monte Batur, Bali."
+                fill
+                className="object-cover transition-opacity duration-300 group-hover:opacity-80"
+              />
+              <div className="absolute inset-0 bg-black bg-opacity-50 flex items-center justify-center">
+                <h3 className="font-custom text-white text-center text-xl md:text-2xl font-bold">
+                  Bali <br /> 2 - 15 Septiembre
+                </h3>
+              </div>
+              <div className="absolute bottom-2 right-2 bg-green-500 text-white text-sm font-semibold px-4 py-2 rounded-md shadow-lg">
+                Plazas disponibles
+              </div>
+            </div>
+          </a>
+        </div>
+        {/* Sección de contacto */}
+        <div className="w-full flex flex-col items-center justify-center mt-12 p-4">
+          <p className="text-lg md:text-xl text-center mb-4 text-gray-700">
+            Si tienes cualquier duda al respecto, no dudes en contactarnos.
+          </p>
+          <a
+            href="https://wa.me/34677311432"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="flex items-center bg-green-500 text-white text-lg font-semibold px-4 py-2 rounded-full shadow-lg transition duration-300 hover:bg-green-600"
+          >
+          ¡Hablemos por chat! &nbsp;
+          <svg xmlns="http://www.w3.org/2000/svg" width="1.2em" height="1.2em" viewBox="0 0 432 432"><path fill="currentColor" d="M364.5 65Q427 127 427 214.5T364.5 364T214 426q-54 0-101-26L0 429l30-109Q2 271 2 214q0-87 62-149T214 3t150.5 62M214 390q73 0 125-51.5T391 214T339 89.5T214 38T89.5 89.5T38 214q0 51 27 94l4 6l-18 65l67-17l6 3q42 25 90 25m97-132q9 5 10 7q4 6-3 25q-3 8-15 15.5t-21 9.5q-18 2-33-2q-17-6-30-11q-8-4-15.5-8.5t-14.5-9t-13-9.5t-11.5-10t-10.5-10.5t-8.5-9.5t-7-8.5t-5.5-7t-3.5-5L128 222q-22-29-22-55q0-24 19-44q6-7 14-7q6 0 10 1q8 0 12 9q2 3 6 13l7 17.5l3 8.5q3 5 1 9q-3 7-5 9l-3 3l-3 3.5l-2 2.5q-6 6-3 11q13 22 30 37q13 11 43 26q7 3 11-1q12-15 17-21q4-6 12-3q6 3 36 17"/></svg>
+          </a>
+        </div>
+      </div>
+
+      <div className="w-full min-h-screen flex flex-col items-center justify-center mt-12">
         <div className="w-full text-center uppercase lg:w-3/4 p-8">
           <h2 className="font-custom text-xl text-t2fSecondary font-bold text-left md:text-center md:text-4xl">¿Por qué <span className="text-t2fPrimary">TRAVEL TO FEEL?</span></h2>
         </div>
@@ -107,23 +191,20 @@ export default function Home() {
 
       <div className="w-full flex flex-col lg:flex-row items-center justify-center mt-12">
         <div className="w-full text-center p-6">
-          <div className="my-4 mx-auto w-full border-t-2 border-t2fPrimary border-dashed"></div>
-          <p className="md:text-2xl lg:text-3xl text-t2fPrimary text-center">Si has llegado hasta aquí es porque te has
-            sentido identificado con nuestro <span className="text-t2fSecondary">POR QUÉ</span>. 
-            <br />
-            Así que vamos con el <span className="text-t2fSecondary">QUÉ Y CÓMO</span> .
-          </p>
-          <h2 className="font-custom uppercase text-xl md:text-3xl text-t2fSecondary font-extrabold text-center mt-8 p-4 bg-t2fPrimary md:max-w-lg mx-auto rounded-lg">
-            Del 2 al 15 de diciembre descubriendo bali
-          </h2>
-          <div className="my-4 mx-auto w-full border-t-2 border-t2fPrimary border-dashed"></div>
+          <div className="my-2 mx-auto w-full border-t-2 border-t2fPrimary border-dashed"></div>
+            <div className="w-full flex flex-col items-center justify-center">
+              <div className="w-full text-center uppercase lg:w-3/4 p-8">
+                <h2 className="font-custom text-2xl text-t2fPrimary font-bold text-left md:text-center md:text-4xl">¿Qué <span className="text-t2fSecondary">actividades </span>te esperan?</h2>
+              </div>
+            </div>
+          <div className="my-2 mx-auto w-full border-t-2 border-t2fPrimary border-dashed"></div>
         </div>
       </div>
 
       {/* NUSA PENIDA */}
       <div className="w-full flex flex-col items-center justify-center mt-8">
         <div className="w-full text-center uppercase lg:w-3/4">
-          <h2 className="font-custom text-2xl text-t2fPrimary font-bold text-center md:text-4xl">NUSA PENIDA</h2>
+          <h2 className="font-custom text-xl text-t2fPrimary font-bold text-center md:text-3xl">NUSA PENIDA</h2>
           <div className="flex justify-center items-center my-4">
             <span className="inline-block h-1 w-16 bg-t2fPrimary"></span>
             <span className="mx-2 text-t2fSecondary">✦✦✦</span>
@@ -148,7 +229,7 @@ export default function Home() {
       {/* SNORKEL */}
       <div className="w-full flex flex-col items-center justify-center mt-8">
         <div className="w-full text-center uppercase lg:w-3/4">
-          <h2 className="font-custom text-2xl text-t2fPrimary font-bold text-center md:text-4xl">SNORKEL</h2>
+          <h2 className="font-custom text-xl text-t2fPrimary font-bold text-center md:text-3xl">SNORKEL</h2>
           <div className="flex justify-center items-center my-4">
             <span className="inline-block h-1 w-16 bg-t2fPrimary"></span>
             <span className="mx-2 text-t2fSecondary">✦✦✦</span>
@@ -173,7 +254,7 @@ export default function Home() {
       {/* CASCADAS */}
       <div className="w-full flex flex-col items-center justify-center mt-8">
         <div className="w-full text-center uppercase lg:w-3/4">
-          <h2 className="font-custom text-2xl text-t2fPrimary font-bold text-center md:text-4xl">CASCADAS</h2>
+          <h2 className="font-custom text-xl text-t2fPrimary font-bold text-center md:text-3xl">CASCADAS</h2>
           <div className="flex justify-center items-center my-4">
             <span className="inline-block h-1 w-16 bg-t2fPrimary"></span>
             <span className="mx-2 text-t2fSecondary">✦✦✦</span>
@@ -197,7 +278,7 @@ export default function Home() {
       {/* AMANECER EN EL MONTE BATUR */}
       <div className="w-full flex flex-col items-center justify-center mt-8">
         <div className="w-full text-center uppercase lg:w-3/4">
-          <h2 className="font-custom text-2xl text-t2fPrimary font-bold text-center md:text-4xl">AMANECER EN EL MONTE BATUR</h2>
+          <h2 className="font-custom text-xl text-t2fPrimary font-bold text-center md:text-3xl">AMANECER EN EL MONTE BATUR</h2>
           <div className="flex justify-center items-center my-4">
             <span className="inline-block h-1 w-16 bg-t2fPrimary"></span>
             <span className="mx-2 text-t2fSecondary">✦✦✦</span>
@@ -222,7 +303,7 @@ export default function Home() {
       {/* KILÓMETROS INFINITOS DE ARROZALES */}
       <div className="w-full flex flex-col items-center justify-center mt-8">
         <div className="w-full text-center uppercase lg:w-3/4">
-          <h2 className="font-custom text-2xl text-t2fPrimary font-bold text-center md:text-4xl">KILÓMETROS INFINITOS DE ARROZALES</h2>
+          <h2 className="font-custom text-xl text-t2fPrimary font-bold text-center md:text-3xl">KILÓMETROS INFINITOS DE ARROZALES</h2>
           <div className="flex justify-center items-center my-4">
             <span className="inline-block h-1 w-16 bg-t2fPrimary"></span>
             <span className="mx-2 text-t2fSecondary">✦✦✦</span>
@@ -247,7 +328,7 @@ export default function Home() {
       {/* BAUTISMO DE BUCEO EN AMED */}
       <div className="w-full flex flex-col items-center justify-center mt-8">
         <div className="w-full text-center uppercase lg:w-3/4">
-          <h2 className="font-custom text-2xl text-t2fPrimary font-bold text-center md:text-4xl">BAUTISMO DE BUCEO EN AMED</h2>
+          <h2 className="font-custom text-xl text-t2fPrimary font-bold text-center md:text-3xl">BAUTISMO DE BUCEO EN AMED</h2>
           <div className="flex justify-center items-center my-4">
             <span className="inline-block h-1 w-16 bg-t2fPrimary"></span>
             <span className="mx-2 text-t2fSecondary">✦✦✦</span>
@@ -272,7 +353,7 @@ export default function Home() {
       {/* Y muchas actividades más */}
       <div className="w-full flex flex-col items-center justify-center mt-8">
         <div className="w-full text-center uppercase lg:w-3/4">
-          <h2 className="font-custom text-xl text-t2fPrimary font-bold text-center md:text-4xl">Y muchas actividades más que complementaremos con 
+          <h2 className="font-custom text-xl text-t2fPrimary font-bold text-center md:text-3xl">Y muchas actividades más que complementaremos con 
             <br />
             <span className="text-t2fSecondary"> nuestra gran pasión</span>
           </h2>
