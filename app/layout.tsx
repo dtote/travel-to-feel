@@ -1,7 +1,7 @@
 import type { Metadata } from "next";
 import { Inter } from "next/font/google";
 import "./globals.css";
-import { GoogleAnalytics } from '@next/third-parties/google'
+import CookieBanner from "./components/CookieBanner.tsx";
 
 const inter = Inter({ subsets: ["latin"] });
 
@@ -67,13 +67,13 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   {
-    const gaId = process.env.NEXT_PUBLIC_GOOGLE_ANALYTICS
-
     return (
       <html lang="es">
-        <body className={inter.className}>{children}</body>
-        {gaId && <GoogleAnalytics gaId={gaId} />}
+        <body className={inter.className}>
+          {children}
+          <CookieBanner />
+        </body>
       </html>
-  );
-}
+    );
+  }
 }

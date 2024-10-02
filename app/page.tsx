@@ -6,6 +6,7 @@ import AccordionItem from "./components/AccordionItem"
 import ScrollLink from "./components/ScrollLink"
 import { getImageSrc } from '../utils/getImageSrc'
 import SvgLogo from "./components/SvgLogo"
+import Footer from "./components/Footer.tsx"
 
 
 export default function Home() {
@@ -22,7 +23,7 @@ export default function Home() {
         />
 
         <div className="flex justify-center items-center w-full h-2/5 absolute top-2 drop-shadow-[0_0_0.6rem_#000000ff]">
-          <SvgLogo width={300} height={300} className="object-contain w-full"/>
+          <SvgLogo width={300} height={300} className="object-contain w-full" />
         </div>
 
         <div className="uppercase absolute inset-0 flex flex-col items-center justify-center mt-10 lg:mt-0">
@@ -40,14 +41,14 @@ export default function Home() {
               backdropFilter: "blur(1px)",
             }}
           >
-          <h2 className="font-custom text-t2fPrimary text-center font-bold text-md md:text-2xl lg:text-3xl">
-            Creada para personas que comparten la pasión de viajar y entrenar crosstraining en comunidad
-          </h2>
-        </div>
+            <h2 className="font-custom text-t2fPrimary text-center font-bold text-md md:text-2xl lg:text-3xl">
+              Creada para personas que comparten la pasión de viajar y entrenar crosstraining en comunidad
+            </h2>
+          </div>
         </div>
         <ScrollLink targetId="second-section" className="animate-bounce absolute bottom-10 md:bottom-5 text-t2fPrimary text-5xl md:text-6xl lg:text-7xl">
           <span className="sr-only">Desplazarse hacia abajo a la siguiente sección</span>
-          <KeyboardArrowDown fontSize="inherit"/>
+          <KeyboardArrowDown fontSize="inherit" />
         </ScrollLink>
       </div>
 
@@ -129,8 +130,8 @@ export default function Home() {
             rel="noopener noreferrer"
             className="flex items-center bg-green-500 text-white text-lg font-semibold px-4 py-2 rounded-full shadow-lg transition duration-300 hover:bg-green-600"
           >
-          ¡Hablemos por chat! &nbsp;
-          <svg xmlns="http://www.w3.org/2000/svg" width="1.2em" height="1.2em" viewBox="0 0 432 432"><path fill="currentColor" d="M364.5 65Q427 127 427 214.5T364.5 364T214 426q-54 0-101-26L0 429l30-109Q2 271 2 214q0-87 62-149T214 3t150.5 62M214 390q73 0 125-51.5T391 214T339 89.5T214 38T89.5 89.5T38 214q0 51 27 94l4 6l-18 65l67-17l6 3q42 25 90 25m97-132q9 5 10 7q4 6-3 25q-3 8-15 15.5t-21 9.5q-18 2-33-2q-17-6-30-11q-8-4-15.5-8.5t-14.5-9t-13-9.5t-11.5-10t-10.5-10.5t-8.5-9.5t-7-8.5t-5.5-7t-3.5-5L128 222q-22-29-22-55q0-24 19-44q6-7 14-7q6 0 10 1q8 0 12 9q2 3 6 13l7 17.5l3 8.5q3 5 1 9q-3 7-5 9l-3 3l-3 3.5l-2 2.5q-6 6-3 11q13 22 30 37q13 11 43 26q7 3 11-1q12-15 17-21q4-6 12-3q6 3 36 17"/></svg>
+            ¡Hablemos por chat! &nbsp;
+            <svg xmlns="http://www.w3.org/2000/svg" width="1.2em" height="1.2em" viewBox="0 0 432 432"><path fill="currentColor" d="M364.5 65Q427 127 427 214.5T364.5 364T214 426q-54 0-101-26L0 429l30-109Q2 271 2 214q0-87 62-149T214 3t150.5 62M214 390q73 0 125-51.5T391 214T339 89.5T214 38T89.5 89.5T38 214q0 51 27 94l4 6l-18 65l67-17l6 3q42 25 90 25m97-132q9 5 10 7q4 6-3 25q-3 8-15 15.5t-21 9.5q-18 2-33-2q-17-6-30-11q-8-4-15.5-8.5t-14.5-9t-13-9.5t-11.5-10t-10.5-10.5t-8.5-9.5t-7-8.5t-5.5-7t-3.5-5L128 222q-22-29-22-55q0-24 19-44q6-7 14-7q6 0 10 1q8 0 12 9q2 3 6 13l7 17.5l3 8.5q3 5 1 9q-3 7-5 9l-3 3l-3 3.5l-2 2.5q-6 6-3 11q13 22 30 37q13 11 43 26q7 3 11-1q12-15 17-21q4-6 12-3q6 3 36 17" /></svg>
           </a>
         </div>
       </div>
@@ -144,7 +145,7 @@ export default function Home() {
           Acabar el WOD y darle la mano a tu compañero al borde del infarto, los ánimos cuando haces RM o te sale tu primer gimnástico y las amistades que se forjan en el box y que son para siempre.
           <br />
           <br />
-          Por otro lado, nace de la sensación inexplicable pero increíble que surge al <strong>viajar y conocer un país nuevo, su cultura y costumbres. </strong> 
+          Por otro lado, nace de la sensación inexplicable pero increíble que surge al <strong>viajar y conocer un país nuevo, su cultura y costumbres. </strong>
           De enamorarte una y otra vez de los paisajes y sobre todo, de llevarte el souvenir más preciado que puedas conseguir, los momentos vividos y que recordarás para siempre.
         </p>
         <div className="w-11/12 md:w-3/4 lg:w-3/4 h-[250px] md:h-[400px] lg:h-[400px] mx-auto relative mt-12">
@@ -163,28 +164,28 @@ export default function Home() {
           <h2 className="font-custom text-xl md:text-4xl text-t2fSecondary font-bold text-left md:text-center">¿Por qué en <span className="text-t2fPrimary">grupos reducidos y filtrados?</span></h2>
         </div>
         <p className="w-3/4 text-justify text-base md:text-xl">
-          Sabemos que la conexión y la afinidad son dos aspectos imprescindibles para que la experiencia sea perfecta, y por ello, escogemos 
+          Sabemos que la conexión y la afinidad son dos aspectos imprescindibles para que la experiencia sea perfecta, y por ello, escogemos
           minuciosamente a personas compatibles que busquen vivir esta experiencia desde el compañerismo, la aventura, el respeto por una cultura
           diferente y quieran salir de su zona de confort. Esta es la clave para crear una verdadera familia viajera.
         </p>
         <div className="w-full lg:w-10/12 lg:flex lg:flex-row lg:justify-between lg:items-center text-center uppercase p-8">
           <div className="w-full md:w-3/4 lg:w-1/2 h-[250px] md:h-[400px] lg:h-[500px] mx-auto lg:mx-4 relative mb-4 lg:mb-0">
             <Image
-                src={getImageSrc("/madrid_championship.jpg")}
-                alt="Atletas participando en competencia de crosstraining, levantando pesas sobre sus cabezas en un estadio."
-                fill
-                className="object-cover rounded-xl"
-                loading="lazy"
-              />
+              src={getImageSrc("/madrid_championship.jpg")}
+              alt="Atletas participando en competencia de crosstraining, levantando pesas sobre sus cabezas en un estadio."
+              fill
+              className="object-cover rounded-xl"
+              loading="lazy"
+            />
           </div>
           <div className="w-full md:w-3/4 lg:w-1/2 h-[300px] md:h-[400px] lg:h-[500px] mx-auto lg:mx-4 relative">
             <Image
-                src={getImageSrc("/froning_team.jpg")}
-                alt="Equipo de atletas participando en los Crossfit Games"
-                fill
-                className="object-cover rounded-xl"
-                loading="lazy"
-              />
+              src={getImageSrc("/froning_team.jpg")}
+              alt="Equipo de atletas participando en los Crossfit Games"
+              fill
+              className="object-cover rounded-xl"
+              loading="lazy"
+            />
           </div>
         </div>
       </div>
@@ -192,11 +193,11 @@ export default function Home() {
       <div className="w-full flex flex-col lg:flex-row items-center justify-center mt-12">
         <div className="w-full text-center p-6">
           <div className="my-2 mx-auto w-full border-t-2 border-t2fPrimary border-dashed"></div>
-            <div className="w-full flex flex-col items-center justify-center">
-              <div className="w-full text-center uppercase lg:w-3/4 p-8">
-                <h2 className="font-custom text-2xl text-t2fPrimary font-bold text-left md:text-center md:text-4xl">¿Qué <span className="text-t2fSecondary">actividades </span>te esperan?</h2>
-              </div>
+          <div className="w-full flex flex-col items-center justify-center">
+            <div className="w-full text-center uppercase lg:w-3/4 p-8">
+              <h2 className="font-custom text-2xl text-t2fPrimary font-bold text-left md:text-center md:text-4xl">¿Qué <span className="text-t2fSecondary">actividades </span>te esperan?</h2>
             </div>
+          </div>
           <div className="my-2 mx-auto w-full border-t-2 border-t2fPrimary border-dashed"></div>
         </div>
       </div>
@@ -216,13 +217,13 @@ export default function Home() {
           más famosa de Indonesia: <strong>Kelingking Beach.</strong>
         </p>
         <div className="w-4/5 sm:w-1/2 md:w-[50vw] lg:w-[55vw] h-[30vh] sm:h-[60vh] md:h-[65vh] lg:h-[65vh] relative mt-8">
-            <Image
-              src={getImageSrc("/kelingking_beach_nusa_penida.jpg")}
-              alt="Kelingking Beach en Nusa Penida, Bali, con su icónica formación rocosa rodeada de aguas azules y arena blanca al atardecer."
-              fill
-              className="object-cover rounded-xl"
-              loading="lazy"
-            />
+          <Image
+            src={getImageSrc("/kelingking_beach_nusa_penida.jpg")}
+            alt="Kelingking Beach en Nusa Penida, Bali, con su icónica formación rocosa rodeada de aguas azules y arena blanca al atardecer."
+            fill
+            className="object-cover rounded-xl"
+            loading="lazy"
+          />
         </div>
       </div>
 
@@ -336,7 +337,7 @@ export default function Home() {
           </div>
         </div>
         <p className="w-4/5 sm:w-1/2 md:w-[50vw] lg:w-[55vw] text-justify text-base md:text-xl">
-          El lugar de Bali por excelencia para hacer inmersiones por su variedad de fauna marina. Nuestros instructores nos guiarán 
+          El lugar de Bali por excelencia para hacer inmersiones por su variedad de fauna marina. Nuestros instructores nos guiarán
           para descubrir todos los rincones que esconden las playas de Amed.
         </p>
         <div className="w-4/5 sm:w-1/2 md:w-[50vw] lg:w-[55vw] h-[30vh] sm:h-[60vh] md:h-[65vh] lg:h-[65vh] relative mt-8">
@@ -353,7 +354,7 @@ export default function Home() {
       {/* Y muchas actividades más */}
       <div className="w-full flex flex-col items-center justify-center mt-8">
         <div className="w-full text-center uppercase lg:w-3/4">
-          <h2 className="font-custom text-xl text-t2fPrimary font-bold text-center md:text-3xl">Y muchas actividades más que complementaremos con 
+          <h2 className="font-custom text-xl text-t2fPrimary font-bold text-center md:text-3xl">Y muchas actividades más que complementaremos con
             <br />
             <span className="text-t2fSecondary"> nuestra gran pasión</span>
           </h2>
@@ -432,7 +433,7 @@ export default function Home() {
             <span className="inline-block h-1 w-16 bg-t2fPrimary"></span>
           </div>
           <h3 className="font-custom uppercase text-xl md:text-3xl text-t2fSecondary font-bold text-center mt-8 p-4 bg-t2fPrimary max-w-2xl mx-auto rounded-lg">
-            Tu decides. 
+            Tu decides.
             <br />
             Vivirlo o soñarlo solo depende de ti.
           </h3>
@@ -443,7 +444,7 @@ export default function Home() {
       <div className="w-full flex flex-col lg:flex-row items-center justify-center">
         <div className="w-5/6 mx-auto bg-t2fSecondary bg-opacity-25 p-4 border-2 border-t2fSecondary rounded-lg shadow-xl">
           <h3 className="font-custom text-2xl text-t2fPrimary font-extrabold text-center md:text-4xl uppercase">
-            <span className="text-t2fSecondary">4 Pasos</span> 
+            <span className="text-t2fSecondary">4 Pasos</span>
             <br />
             para tener tu plaza</h3>
           <div className="w-full p-8">
@@ -451,7 +452,7 @@ export default function Home() {
               <li>Completar un sencillo formulario que te dejaremos a continuación para poder conocerte y asegurar que vivas la experiencia con esas personas afines de las que te hablamos anteriormente.
               </li>
               <li>Una vez recibido el formulario nos pondremos en contacto contigo para concertar una videollamada de unos 30 minutos. Resolveremos dudas,
-                 daremos más información sobre el viaje y nos aseguraremos de que Travel To Feel es la decisión correcta para tu viaje de ensueño.
+                daremos más información sobre el viaje y nos aseguraremos de que Travel To Feel es la decisión correcta para tu viaje de ensueño.
               </li>
               <li>Si ambos estamos de acuerdo en que sí es para ti el viaje, solo quedará reservar la plaza y listo ¡Bienvenido a la familia!.</li>
               <li>Cuando se complete el grupo mínimo, haremos un grupo de Whatsapp para dar toda la información necesaria, hacer videollamadas e irnos conociendo y tengan apoyo 24h para cualquier duda que tengan.
@@ -463,7 +464,7 @@ export default function Home() {
 
       <div className="md:w-5/6 text-center mt-8 p-6">
         <p className="md:text-2xl lg:text-3xl font-medium text-gray-700">
-         Aquí comienza tu viaje, rellena el formulario y únete a nosotros.
+          Aquí comienza tu viaje, rellena el formulario y únete a nosotros.
         </p>
       </div>
       <div className="w-full flex justify-center mt-4">
@@ -478,41 +479,7 @@ export default function Home() {
         </a>
       </div>
 
-      <footer className="w-full bg-t2fSecondary text-t2fPrimary py-2 mt-12">
-        <div className="w-full mx-auto flex flex-col items-center justify-between">
-
-          <div className="w-full flex flex-col items-center justify-center">
-            <SvgLogo width={200} height={200} className="object-contain scale-110 w-full drop-shadow-[0_0_0.6rem_#000000ff]"  />
-            <p className="text-center md:text-left text-sm md:text-base">
-              Uniendo la pasión por viajar y el crosstraining.
-            </p>
-          </div>
-
-          <div className="w-full flex flex-col md:flex-row items-center justify-between mt-4 border-t border-opacity-50 border-t2fPrimary pt-4">
-            <div className="w-1/2 flex flex-col items-center justify-center mb-8 md:mb-0">
-              <h3 className="font-bold text-lg mb-4">Síguenos</h3>
-              <div className="flex space-x-6">
-                <a href="https://www.instagram.com/traveltofeel_" aria-label="Visitar nuestro perfil de Instagram" target="_blank" rel="noopener noreferrer">
-                  <InstagramIcon className="hover:text-white transition duration-500" fontSize="large" />
-                </a>
-              </div>
-            </div>
-
-            <div className="w-1/2 flex flex-col items-center justify-center">
-              <h3 className="font-bold text-lg mb-4">Contáctanos</h3>
-              <p className="text-sm md:text-base">
-                <a href="mailto:traveltofeelcompany@gmail.com" aria-label="Enviar un correo a traveltofeelcompany@gmail.com" className="underline hover:text-white transition duration-500">
-                  traveltofeelcompany@gmail.com
-                </a>
-              </p>
-            </div>
-          </div>
-        </div>
-
-        <div className="mt-6 border-t border-t2fPrimary border-opacity-50 pt-4 text-center text-sm">
-          <p>&copy; {new Date().getFullYear()} Travel To Feel. Todos los derechos reservados.</p>
-        </div>
-      </footer>
+      <Footer />
     </main>
   )
 }
